@@ -1,0 +1,90 @@
+## Symbols
+
+Logical Symbols:
+- **AND**: Performs the "AND" operation to connect multiple conditions or actions. Scope: Within `Condition` or `Action`; supports nesting. Grammatical Position: Between sub-expressions of `Condition` or `Action`.
+- **OR**: Performs the "OR" operation to connect multiple conditions or actions. Scope: Same as above. Grammatical Position: Same as above.
+- **NOT**: Negates the preceding condition or action. Scope: A single `Condition` or `Action`. Grammatical Position: Prefix of `Condition` or `Action`.
+- Semantic Role: Implements Boolean logic combinations of conditions/actions, enabling the rule to support branching behaviors.
+
+
+Comparison Symbols:
+- **=**: Equality comparison. Scope: Within `Condition` or `ExpectedOutcome`; used to match strings/numbers. Grammatical Position: Between attribute values and constants (e.g., `Actor = "Primary Market Maker"`).
+- **!=**: Inequality comparison. Scope: Same as above. Grammatical Position: Same as above.
+- **> / <**: Greater-than/less-than comparison. Scope: Numeric attributes (e.g., `Quantity`, `Price`). Grammatical Position: Same as above.
+- **IN**: Membership check (e.g., `TradingMethod IN ("Inquiry Execution", "Click Execution")`). Scope: String lists. Grammatical Position: Between an attribute and a list.
+- Semantic Role: Defines precise predicates for condition evaluation or result assertion.
+
+
+Domain Symbols:
+- These are entity attributes based on the metamodel; their values are either strings (descriptive text) or numbers (quantified values). Scope: The entire `Rule`, supporting `Precondition`, `Operation`, and `ExpectedResult`.
+- **Precondition**:
+  - `Actor` (e.g., "Primary Market Maker")
+  - `TradingInstrument` (e.g., "Benchmark Market Making Product")
+  - `TradingMarket` (e.g., "Shenzhen Stock Exchange")
+  - `Time` (e.g., "Current Day")
+  - `Constraint` (e.g., "Intraday Rotation Trading")
+  - `Event` (e.g., "Order Submission")
+- **Operation**:
+  - `Action` (e.g., "Order Submission")
+  - `TradingDirection` (e.g., "Buy")
+  - `TradingMethod` (e.g., "Inquiry Execution")
+  - `Quantity` (numeric, e.g., 1000)
+  - `Price` (numeric, e.g., 99.5)
+  - `OperationPart` (e.g., "Continuous Market Making Business")
+  - `Status` (e.g., "Unsubmitted")
+- **ExpectedResult**:
+  - `ResultStatus` (e.g., "Unfilled")
+  - `Result` (e.g., "Success")
+- Semantic Role: Maps to key-value pairs in test cases (e.g., "Operator" or "Trading Method" in `testid`), ensuring alignment between symbols and JSON test data.
+
+## Syntax
+
+<Rule> ::= "IF" <Condition> "AND" <Action> "THEN" <ExpectedOutcome>
+
+<Condition> ::= <PreconditionElement> | "(" <PreconditionElement> ("AND" | "OR") <Condition> ")" | "NOT" <Condition>
+                | <PreconditionElement> ("AND" | "OR") <Condition>
+
+<PreconditionElement> ::= <Attribute> "=" <Value> | <Attribute> "!=" <Value> | <Attribute> ">" <Value> | <Attribute> "<" <Value> | <Attribute> "IN" "(" <ValueList> ")"
+
+<Action> ::= <OperationElement> | "(" <OperationElement> ("AND" | "OR") <Action> ")" | "NOT" <Action>
+             | <OperationElement> ("AND" | "OR") <Action>
+
+<OperationElement> ::= <Attribute> "=" <Value> | <Attribute> "=" <NumericValue> 
+
+<ExpectedOutcome> ::= <ResultElement> | "(" <ResultElement> ("AND" | "OR") <ExpectedOutcome> ")" | "NOT" <ExpectedOutcome>
+                      | <ResultElement> ("AND" | "OR") <ExpectedOutcome>
+
+<ResultElement> ::= <Attribute> "=" <Value> | <Attribute> "!=" <Value>
+
+<Attribute> ::= "Actor" | "TradingInstrument" | "TradingMarket" | "Time" | "Constraint" | "Event"  // Precondition
+              | "Action" | "TradingDirection" | "TradingMethod" | "Quantity" | "Price" | "OperationPart" | "Status"  // Operation
+              | "ResultStatus" | "Result"  // ExpectedResult
+
+<Value> ::= '"' <String> '"' | <NumericValue>
+
+<NumericValue> ::= <Digit> { <Digit> } | <Digit> "." <Digit> { <Digit> }
+
+<ValueList> ::= <Value> { "," <Value> }
+
+<Digit> ::= "0" | "1" | ... | "9"
+
+<String> ::= <Char> { <Char> }
+
+
+## Testability Constraints
+
+context Rule inv:
+  Precondition->select(e | e.oclIsTypeOf(Actor) or e.oclIsTypeOf(Time))->notEmpty()
+
+  Operation.Action->size() >= 1 and
+  Operation->forAll(o | o.Status->size() <= 3)
+
+  ExpectedResult.Result->forAll(r | Set{"success", "failure", "partial fill", "all fill"}->includes(r)) and
+  ExpectedResult.ResultStatus->notEmpty()
+
+  self.allAttributes()->forAll(a | a.Value.oclIsKindOf(String) or a.Value.oclIsKindOf(Real)) and
+  self.Precondition->union(self.Operation)->union(self.ExpectedResult)->select(e | e.Attribute = "TradingMethod")->forAll(m | 
+    Set{"Inquiry Transaction", "Bidding Transaction", "Click Transaction", "Negotiation Transaction", "Matching Transaction"}->includes(m.Value)
+  )
+
+  self.Condition->forAll(c | not (c = "true" or c = "false"))

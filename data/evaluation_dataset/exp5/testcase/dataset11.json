@@ -1,0 +1,4772 @@
+[
+{
+"Operation": "Power Reduction",
+"Frequency": "0.5",
+"Power Response": "Reducing pmax by 10% per 1 Hz",
+"Result": "Success"
+},
+{
+"Operation": "Single point of failure",
+"Operation 2": "Non-disconnect",
+"Operation Object": "Interface Switch",
+"Status": "Security functions not lost",
+"Status 2": "Displaying an error",
+"Protection Mechanism": "Meets fault tolerance requirements",
+"Result": "Failure"
+},
+{
+"Operation": "No settings provided",
+"Operation 2": "Non-application of Table 2 default settings",
+"Result": "Failure"
+},
+{
+"Operation": "Power Reduction",
+"Frequency": "49.5",
+"Power Response": "Reducing pmax by 10% per 1 Hz",
+"Result": "Failure"
+},
+{
+"Operation": "Non-power reduction",
+"Frequency": "49.5",
+"Power Response": "Reducing pmax by 10% per 1 Hz",
+"Result": "Failure"
+},
+{
+"Operation": "Non-run",
+"Frequency": "53",
+"Status": "Running until the interface protection device activates.",
+"Result": "Failure"
+},
+{
+"Frequency": "47",
+"Status": "Running",
+"Target of Operation": "Power Generation Facilities",
+"Protection Mechanism": "Until the interface protection device activates",
+"Result": "Success"
+},
+{
+"Operation": "Start power generation",
+"Frequency": "49.5",
+"Status": "Allowed",
+"Result": "Success"
+},
+{
+"Parameter": "Observation time",
+"Range": "[10,600]sand default setting=60s",
+"Result": "Success"
+},
+{
+"Operation": "After a non-phase transition occurs",
+"Target of Operation": "Power Generation Module",
+"Target of Operation 2": "Synchronous Power Generation Technology",
+"Fault type": "Symmetry",
+"Power Response": "90% of the smaller value",
+"Result": "Failure"
+},
+{
+"Operation": "Non-configuration settings",
+"Operation 2": "Use the power generator to submit settings",
+"Status": "Grid-connected operation",
+"Operator": "Power Generator",
+"Target of Operation": "Power Generation Equipment",
+"Result": "Failure"
+},
+{
+"Frequency": "48",
+"Status": "Continuously running",
+"Result": "Failure"
+},
+{
+"Frequency": "46",
+"Status": "Able to run",
+"Result": "Failure"
+},
+{
+"Operation": "Not supported for on-site activation",
+"Operation 2": "Support on-site disabling.",
+"Target of Operation": "Voltage-related active power reduction function",
+"Result": "Failure"
+},
+{
+"Interface protection": "Features configurable digital inputs",
+"Digital input usage": "Switch to narrowband",
+"Result": "Success"
+},
+{
+"Operation": "Evaluate accuracy",
+"Protection Mechanism": "Not considering the impact of PoC load",
+"Protection Mechanism 2": "Only considers power plant behavior",
+"Result": "Success"
+},
+{
+"Power Response": "Active power response starts when frequency drops.",
+"Step response time": "30s",
+"Inherent dead time": "After 2 seconds",
+"Result": "Failure"
+},
+{
+"Operator": "tso",
+"Target of Operation": "Power Generation Facilities",
+"Power Response": "Can receive specified function parameter settings",
+"Result": "Success"
+},
+{
+"Operation": "Action",
+"Status": "Over-frequency or under-frequency unit protection",
+"Protection mechanism": "Acts before interface protection",
+"Result": "Success"
+},
+{
+"Operation": "Configuration Settings",
+"Operation 2": "Use the provided settings",
+"Operator": "dso",
+"Operator 2": "Responsible Party",
+"Target of Operation": "Power Plant",
+"duration": "intentional delay",
+"Result": "Success"
+},
+{
+"Frequency measurement": "In progress",
+"Frequency": "±10MHz resolution",
+"Result": "Success"
+},
+{
+"Operation": "Configuration Settings",
+"Operation 2": "Do not use default settings",
+"Frequency": "49.2",
+"Operator": "Non-responsible party",
+"Target of Operation": "Power Plant",
+"Power Response": "Sagging",
+"Result": "Failure"
+},
+{
+"Operation": "Non-vector offset detection",
+"Operator": "dso",
+"Target of Operation": "Isolation Phenomenon",
+"Result": "Failure"
+},
+{
+"Operation": "Non-Rocof trip",
+"Operator": "dso",
+"Target": "Island Detection",
+"Protection Mechanism": "Active Approach",
+"Result": "Failure"
+},
+{
+"Status": "Active",
+"duration": ">Inherent dead time",
+"duration2": "<=2s",
+"Power Response": "Programmable Delay",
+"Result": "Success"
+},
+{
+"unit": "Multiphase power generation unit",
+"switch": "switch",
+"Protection Mechanism": "Overvoltage Category 2 for all live conductor contacts",
+"Result": "Success"
+},
+{
+"Operation": "Reconnect",
+"Frequency": "<The specific frequency at which the frequency is disconnected",
+"Status": "Reconnection process started",
+"Operation Object": "Power Generation Unit",
+"Result": "Success"
+},
+{
+"Interface Protection Relay": "Function",
+"Interface Switch": "Trigger",
+"Result": "Success"
+},
+{
+"Protection Threshold": "Phase 1",
+"Voltage threshold": "<=1",
+"Voltage threshold step size": "0.01",
+"Action time step": "0.1",
+"Triggerable": "Optional",
+"Action Time": "Post-100s",
+"Result": "Failure"
+},
+{
+"Purpose": "Island Detection",
+"Method": "Narrow frequency threshold",
+"Disable method": "External signal",
+"Result": "Success"
+},
+{
+"Operation": "Synchronize",
+"Operation 2": "Non-manually closed switch",
+"Operator": "Unit",
+"Target of Operation": "Distribution Network",
+"Status": "Fully Automatic Mode",
+"Result": "Success"
+},
+{
+"Operation": "Non-run",
+"Frequency": "52.0",
+"Status": "Not required to run",
+"Result": "Failure"
+},
+{
+"Status": "Charging Mode",
+"Target of Operation": "Energy Storage Unit",
+"Power Response": "Increase charging power according to the configured droop characteristics",
+"Result": "Success"
+},
+{
+"Operation": "Grid-connected operation",
+"Fault Type": "Internal Fault in Power Plant",
+"Protection Mechanism": "Switch Coordination Operation",
+"Result": "Success"
+},
+{
+"Voltage": "0.85",
+"Operation": "Discontinuous operation",
+"Status": "Power Generation Process",
+"Result": "Failure"
+},
+{
+"Frequency": "f1",
+"Protection Mechanism": "This feature is disabled",
+"Result": "Success"
+},
+{
+"Fault Type": "High Frequency Period",
+"Power Response": "Allows power values below the droop function definition.",
+"Result": "Success"
+},
+{
+"Operation": "Disconnect randomized frequency.",
+"Frequency": "Uniformly distributed random value",
+"Result": "Success"
+},
+{
+"Operations": "Hydropower",
+"Power Response": "50",
+"Target of Operation": "Small Power Generation Unit",
+"Status": "Exemption from OVR requirements",
+"Result": "Failure"
+},
+{
+"Operation": "Requirements",
+"Operator": "Responsible Party",
+"Target": "Time period or frequency range",
+"Status": "Stricter time period and frequency range",
+"Result": "Success"
+},
+{
+"Target of Operation": "Small Power Generation Unit",
+"Target of Operation 2": "[Combined Heating System (CHP), Fuel Cell, Rotating Machinery, Hydropower]",
+"Power Response": "<= 50kW",
+"Protection Mechanism": "Non-Applicable OVRRT Requirements",
+"Result": "Success"
+},
+{
+"Operation": "Interface switch activated",
+"Status": "dso inaccessible",
+"Protection mechanism": "Automatic disconnection",
+"Protection Mechanism 2": "Single Fault Tolerance",
+"Result": "Success"
+},
+{
+"Generator set": "Generator set",
+"Maximum capacity": ">=0.8kW",
+"Input Port": "Instruction Received",
+"Constraint": "Stop active power output",
+"Duration": "After 5 seconds",
+"Result": "Failure"
+},
+{
+"switch": "switch device",
+"Protection Mechanism": "Coordination between short-time withstand current and maximum short-circuit power",
+"Result": "Success"
+},
+{
+"Voltage": "Discontinuous operating voltage range",
+"Protection mechanism": "Operate according to technically feasible requirements as much as possible.",
+"Prediction accuracy": "No specific accuracy required",
+"Result": "Success"
+},
+{
+"Protection Threshold": "Level Two",
+"Trigger Selection": "Whether to trigger is optional.",
+"Result": "Success"
+},
+{
+"Operation": "The parties agreed to a broader scope and a longer duration.",
+"Protection Mechanism": "Must meet the stringent requirements in Table 1.",
+"Result": "Failure"
+},
+{
+"Operation": "Based on",
+"Operation 2": "Automatic disconnection function not provided",
+"Operation 3": "Compliant with single-fault tolerance capability",
+"Operation 4": "Does not comply with Clause 4.13",
+"Operator": "Non-grid operator",
+"Result": "Failure"
+},
+{
+"Operator": "Relevant Party",
+"Object of Operation": "Class B Power Generation Unit",
+"Fault Type": "Occurred",
+"Voltage drop": "occurred",
+"Status": "Voltage support provided",
+"reference": "en50549-2, Clause 4.7.4",
+"Result": "Success"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"Frequency": "Adjustable on-site.",
+"Result": "Success"
+},
+{
+"Object of Operation": "Environmental Conditions",
+"Power Response": "Power Reduction",
+"Status": "Complies with the requirements specified by the responsible party",
+"Result": "Success"
+},
+{
+"Operation": "Tripping caused by overvoltage due to non-voltage rise.",
+"Target of Operation": "Integrated Interface Protection System",
+"Status": "Unable to achieve",
+"Protection mechanism": "As close to the access point as possible",
+"Protection Mechanism 2": "Allows periodic on-site testing",
+"Result": "Failure"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"Power Response": "Adjustable on-site.",
+"Result": "Success"
+},
+{
+"Operation": "Non-active power output has changed.",
+"Operation 2": "Enable power-related control mode (cosp).",
+"Operation 3": "Define a new cosφ setting value not based on the set characteristic curve",
+"Result": "Failure"
+},
+{
+"Voltage": "Unpermitted voltage range",
+"Allow": "Disconnect and start generating power",
+"Result": "Success"
+},
+{
+"Operation": "Non-synchronization",
+"Operation 2": "Non-implementation execution",
+"Operation 3": "Non-real-time disconnection",
+"Status": "Normal network operating conditions",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Status": "Automatic Reconnection",
+"Fault type": "Open circuit",
+"Power Response": "Default Value",
+"Result": "Failure"
+},
+{
+"Voltage measurement": "In progress",
+"Voltage": "±1%un",
+"Result": "Success"
+},
+{
+"Frequency": "49.0",
+"Status": "Automatic Reconnection",
+"Fault type": "Open circuit",
+"Power Response": "Default Value",
+"Result": "Failure"
+},
+{
+"Operation": "Non-required",
+"Operator": "dso",
+"Fault Type": "Local Phenomenon",
+"Fault Type 2": "Circuit Breaker Tripping",
+"Status": "Provides numeric input conforming to 4.9.4",
+"Frequency": "Using threshold 4.9.2.6",
+"Protection Mechanism": "Switch to Narrow Bandwidth",
+"Protection Mechanism 2": "Enable frequency restriction window",
+"Protection Mechanism 3": "Associated with Additional Protection Functions",
+"Result": "Failure"
+},
+{
+"Frequency threshold": "47.0",
+"Frequency threshold step size": "0.1",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase Two",
+"Motion time step": "0.05",
+"Action Time": "5 hours later",
+"Result": "Failure"
+},
+{
+"Neutral point": "Exists",
+"Evaluate Voltage": "Voltage between each phase and the neutral point",
+"Result": "Success"
+},
+{
+"Operation": "Appears",
+"Fault Type": "Internal Fault in Power Plant",
+"Status": "Distribution network is operating normally",
+"Result": "Success"
+},
+{
+"Operation": "Manufacturer's specifications state the required environmental conditions.",
+"Operation 2": "Manufacturer's instructions may impose limitations",
+"Operation 3": "Cannot be provided in chart format",
+"Conditions": "Environmental conditions affect power reduction",
+"Operation Object": "Power Generation Unit",
+"Result": "Failure"
+},
+{
+"Operation": "Supports on-site configuration control mode.",
+"Operation 2": "Supports on-site activation control mode.",
+"Operation 3": "Control mode not supported for on-site shutdown",
+"Operation Object": "Power Generation Unit",
+"Result": "Failure"
+},
+{
+"Request": "Start generating electricity",
+"Frequency range": "Can be adjusted according to the range in column 2 of Table 4.",
+"Voltage range": "Can be adjusted according to the range in column 2 of Table 4.",
+"Observation time": "Can be adjusted according to the range in column 2 of Table 4.",
+"Result": "Success"
+},
+{
+"Operation": "Non-dynamic precision",
+"Status": "qu mode",
+"Prediction accuracy": "Conforms to Figure 15",
+"duration": "<=3",
+"Power Response": "<=0.05",
+"Result": "Failure"
+},
+{
+"Operation": "Inverter Bridge Configuration",
+"Operation 2": "Non-control signal shutdown",
+"Target": "Second switch",
+"Protection Mechanism": "Fault detected",
+"Protection Mechanism 2": "Prevents operation before reconnection",
+"Result": "Failure"
+},
+{
+"Operation": "Abnormal operation",
+"Frequency": "52.0",
+"duration": ">=0",
+"duration2": ">=15",
+"duration3": "<=15",
+"Result": "Success"
+},
+{
+"Target of Operation": "Power Plant",
+"Conditions": "Considering generator module connection technology",
+"Protection Mechanism": "Provides the anti-interference capabilities described in the following clauses",
+"Result": "Success"
+},
+{
+"Operation": "Rotating Machinery",
+"Power Response": "50",
+"Target of Operation": "Small Power Generation Unit",
+"Status": "Exemption Required",
+"Result": "Failure"
+},
+{
+"Target": "Frequency Over-frequency Response",
+"parameter": "Shutdown threshold",
+"Frequency": "<=f1",
+"Fault type": "Shutdown",
+"Result": "Success"
+},
+{
+"Power Generation Module": "Type A Module",
+"Actual behavior": "Explicitly stipulated in the access agreement",
+"Result": "Success"
+},
+{
+"Target": "hv event",
+"Status": "Affecting MV and LV small generator units",
+"Result": "Success"
+},
+{
+"Target": "Frequency Over-frequency Response",
+"parameter": "Sagging coefficient",
+"fault type": "5%",
+"droop": ">=2",
+"droop2": "<=12",
+"Result": "Success"
+},
+{
+"Object to be manipulated": "ehv event",
+"Status": "Affecting MV and LV small generator units",
+"Result": "Success"
+},
+{
+"Operation": "Not provided",
+"Frequency": "<Standard Frequency",
+"Target of Operation": "Power Plant",
+"Status": "Possesses the ability",
+"Power Response": "Startup",
+"Result": "Failure"
+},
+{
+"Operation": "Define a new cosφ setting.",
+"Power Response": "Reactive power changes are synchronized with active power changes.",
+"Result": "Success"
+},
+{
+"Target of Operation": "Voltage drop inside the power plant",
+"Status": "Considering internal voltage variations",
+"Result": "Success"
+},
+{
+"Operation": "Do not appear",
+"Fault Type": "Internal Fault in Power Plant",
+"Status": "Distribution network is operating normally",
+"Result": "Failure"
+},
+{
+"Operation": "Run",
+"Frequency": "53",
+"Status": "Running until the interface protection device activates.",
+"Result": "Failure"
+},
+{
+"Voltage": ">=50%un",
+"Power Response": "Automatic Reconnection",
+"Result": "Success"
+},
+{
+"Protection Mechanism": "Activate",
+"Constraint": "Multiple signals exist",
+"Protection Mechanism 2": "Protection action is triggered when any signal meets the threshold condition.",
+"Result": "Success"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"duration": "Based on the range in column 2 of Table 3",
+"Result": "Success"
+},
+{
+"Operation": "Not adjustable",
+"Frequency": "50.0",
+"Voltage": "20",
+"Protection Mechanism": "Overfrequency Threshold Phase 1",
+"duration": ">=0.1",
+"duration2": "<=100",
+"Result": "Failure"
+},
+{
+"Operation": "Reduce current",
+"Power Response": "1.1",
+"Status": "Grid-connected operation",
+"Voltage": ">1.3un",
+"Target of Operation": "Inverter Generator Unit",
+"Result": "Failure"
+},
+{
+"Operation": "Configuration Settings",
+"Operation 2": "Not using provided settings",
+"Operator": "dso",
+"Operator 2": "Responsible Party",
+"Target of Operation": "Power Plant",
+"duration": "intentional delay",
+"Result": "Failure"
+},
+{
+"Operation": "Not adjustable",
+"Frequency": "50.0",
+"Voltage": "121",
+"Protection Mechanism": "Overfrequency Threshold Phase 2",
+"duration": ">=0.1",
+"duration2": "<=5",
+"Result": "Failure"
+},
+{
+"Operation": "Abnormal operation",
+"Frequency": "46.0",
+"duration": ">=0",
+"duration2": "<=0",
+"duration3": "<=20",
+"Result": "Failure"
+},
+{
+"Operation": "Adjustment",
+"Operator": "Relevant Responsible Party",
+"Target": "This function and its settings",
+"Protection Mechanism": "Prevents unauthorized interference",
+"Result": "Success"
+},
+{
+"Operation": "Non-run",
+"Voltage": "<= 1.10un",
+"Status": "Continuously running",
+"Result": "Failure"
+},
+{
+"Operation": "Requires more stringent characteristics",
+"Frequency": "<49Hz",
+"Operator": "Responsible Party",
+"Power Response": "Maximum Allowable Cutoff Rate",
+"Result": "Success"
+},
+{
+"Operation": "Non-immediate safe disconnect",
+"Status": "Invalid",
+"Operated Object": "Switchgear Auxiliary Power Supply",
+"Result": "Failure"
+},
+{
+"Overvoltage threshold": "Level 2",
+"Motion time step": "0.05",
+"Action Time": "5",
+"Result": "Success"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"Power Response": "Droop settings provided by DSO and the responsible party",
+"Result": "Success"
+},
+{
+"Operation": "Non-run",
+"Frequency": "48.5",
+"duration": ">=30 minutes",
+"Result": "Failure"
+},
+{
+"Operation": "Run",
+"Frequency": ">=Rocof value specified by the responsible party",
+"Status": "Immune to Rocof",
+"Result": "Success"
+},
+{
+"Frequency": "<f1",
+"Usable primary power": ">Calculated value of droop function",
+"Power Response": "Allows values higher than the calculated droop function value",
+"Result": "Success"
+},
+{
+"Operation": "Disconnect according to the interface protection settings in Chapter 4.9",
+"Frequency": ">Upper limit of operating range",
+"Result": "Success"
+},
+{
+"Operation": "Active power reduction",
+"Power Response": "<= First-order filter time constant tau=3 seconds",
+"Result": "Success"
+},
+{
+"Operation": "Non-single point of failure",
+"Operation 2": "Non-disconnect",
+"Operation Object": "Interface Switch",
+"Status": "Security functions not lost",
+"Status 2": "Displaying an error",
+"Protection Mechanism": "Meets fault tolerance requirements",
+"Result": "Failure"
+},
+{
+"Frequency": "<= 52.0 Hz",
+"Status": "Active",
+"duration": "60s",
+"Result": "Success"
+},
+{
+"Constraint": "Achieve maximum charging capacity",
+"Power Response": "Allows a reduction in charging power",
+"Result": "Success"
+},
+{
+"Operation": "Switch to Trip",
+"Operator": "dso",
+"Target": "Island Detection",
+"Protection Mechanism": "Active Approach",
+"Result": "Success"
+},
+{
+"Voltage": "< Rated value * 0.98",
+"Protection Mechanism": "Discontinuous Startup and Exit Operations",
+"Result": "Success"
+},
+{
+"Operation": "Non-holding droop response",
+"Status": "Frequency Response Activated",
+"Frequency": ">=f1",
+"Target of Operation": "Power Plant",
+"Fault Type": "Not due to low frequency",
+"Power Response": "Using actual frequency",
+"Result": "Failure"
+},
+{
+"Operator": "Small power generation unit",
+"Target of Operation": "Hydropower Generation",
+"Status": "Exempt from general requirements",
+"Result": "Success"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"Status": "Adjustable settings enabled",
+"Protection Mechanism": "Provides protection against unauthorized interference",
+"Result": "Success"
+},
+{
+"Operation": "Non-measurement",
+"duration": "500ms",
+"Status": "Defines rocof immunity",
+"Result": "Failure"
+},
+{
+"Operation": "Run",
+"Frequency": "48.0",
+"duration": "unlimited",
+"Result": "Failure"
+},
+{
+"Operation": "Non-power reduction",
+"Frequency": "48.5",
+"Power Response": "Reducing pmax by 10% per 1 Hz",
+"Result": "Failure"
+},
+{
+"Power Response": "No step or oscillation occurs.",
+"Result": "Success"
+},
+{
+"Operation": "Power Generation",
+"Operation 2": "Non-setting function parameters",
+"Operation 3": "Non-standardized communication",
+"Operator": "tso",
+"Target of Operation": "Power Generation Facilities",
+"Power Response": ">Threshold",
+"Status": "Possesses the ability",
+"Operation Object 2": "Operation and Control System",
+"Result": "Failure"
+},
+{
+"Operation": "Evaluation",
+"Protection Mechanism": "Overvoltage Protection",
+"Voltage": "Fundamental Value",
+"Result": "Success"
+},
+{
+"controlmode": "cos",
+"Status": "Optional Activation",
+"Result": "Success"
+},
+{
+"Status": "Using independent threshold",
+"Protection Mechanism": "Overfrequency Protection",
+"Protection Mechanism 2": "Threshold 1 can be activated",
+"Protection Mechanism 3": "Threshold 2 can be activated",
+"Result": "Success"
+},
+{
+"Operation": "Non-start power generation",
+"Voltage": "0.5",
+"Status": "Allowed",
+"Result": "Failure"
+},
+{
+"Operation": "q Setting value local change",
+"Status": "The new setting has reached a stable state.",
+"duration": "<=60s",
+"Result": "Success"
+},
+{
+"Operation Object": "Interface Switch",
+"Protection Mechanism": "Mechanical Circuit Breaker",
+"Protection Mechanism 2": "Has corresponding rated current",
+"Protection Mechanism 3": "Has the corresponding short-circuit contribution capability of power plants",
+"Result": "Success"
+},
+{
+"Operator": "Power Generation Unit",
+"Power Response": "Connection to Distribution Network",
+"Status": "Automatically disconnected",
+"Result": "Success"
+},
+{
+"Operation": "Run",
+"Frequency": "51.0",
+"duration": ">=30 minutes",
+"Result": "Failure"
+},
+{
+"Operation": "Requires voltage support",
+"Operator": "Responsible Party",
+"Target of Operation": "Power Plant",
+"Protection Mechanism": "Possesses the ability to manage reactive power",
+"Protection Mechanism 2": "Possesses the ability to manage active power generation",
+"Protection Mechanism 3": "As required by Clause 4.7",
+"Result": "Success"
+},
+{
+"Operation": "Non-evaluation",
+"Operation 2": "Select Switch",
+"Fault Type": "Power Plant's Contribution to Short-Circuit Current",
+"Result": "Failure"
+},
+{
+"Frequency": "49.0",
+"duration": ">=unlimited",
+"duration2": ">=unlimited",
+"Result": "Success"
+},
+{
+"Frequency": ">=f1",
+"Operator": "Power Plant",
+"Power Response": "Inactive",
+"Status": "Active",
+"Result": "Success"
+},
+{
+"Event": "After reconnection",
+"Active power": "<=Climb rate",
+"Result": "Success"
+},
+{
+"Operator": "Power Plant",
+"Target of Operation": "Interface Protection System",
+"Fault Type": "Single Point of Fault",
+"Status": "Safety functions not lost",
+"Result": "Success"
+},
+{
+"Power Generation Unit": "Capacity <",
+"Power Generation Technology": "chp",
+"Requirement": "Exemption from this requirement",
+"Result": "Success"
+},
+{
+"Status": "High penetration rate",
+"Target of Operation": "Distributed Generation",
+"r=k": "Significant active power supply loss",
+"Result": "Success"
+},
+{
+"Operation": "Disconnect according to the interface protection settings in Chapter 4.9",
+"Frequency": ">Interface Protection Settings",
+"Result": "Success"
+},
+{
+"Protection Function": "10-minute average overvoltage protection",
+"Time Delay Setting": "0",
+"Result": "Success"
+},
+{
+"Operation": "Start power generation",
+"Frequency": "50.0",
+"Status": "Allowed",
+"Result": "Failure"
+},
+{
+"Operation": "Can be adjusted on-site",
+"Operation Object": "Power Gradient",
+"Result": "Success"
+},
+{
+"Operation": "Switch Selection",
+"Operation 2": "Non-mechanical circuit breaker",
+"Operation Object": "Interface Switch",
+"Operating Object 2": "Rated Current and Short-Circuit Contribution Capability",
+"Operation Object 3": "Coordination of Short-Time Withstand Current and Short-Circuit Power",
+"Result": "Failure"
+},
+{
+"Operation": "Non-action",
+"Status": "Over-frequency or under-frequency unit protection",
+"Protection mechanism": "Acts before interface protection",
+"Result": "Failure"
+},
+{
+"Standard": "hd",
+"Terms": "551.7.4",
+"Requirement": "Provide an automatic switching device.",
+"Result": "Success"
+},
+{
+"Operation": "Fulfill all the above functions",
+"Target of Operation": "Power Plant",
+"Protection mechanism": "Coordinated but independent switching and protection devices may be used.",
+"Result": "Success"
+},
+{
+"Status": "Low active power operation",
+"Operation Object": "qu Control Mode",
+"Protection Mechanism": "Configurable Reactive Power Limitation Method",
+"Result": "Success"
+},
+{
+"Frequency": "47.0",
+"duration": ">=No need to run",
+"duration2": ">=20 seconds",
+"Result": "Success"
+},
+{
+"Operation": "Configuration Settings",
+"Operation 2": "Use default settings",
+"Frequency": "51.5",
+"Operator": "Non-responsible party",
+"Target of Operation": "Power Plant",
+"duration": "intentional delay",
+"Result": "Failure"
+},
+{
+"Operation": "Stop",
+"Operation 2": "Off-site adjustment",
+"Operation Object": "Power Generation Unit",
+"Protection Mechanism": "Prevents unauthorized interference",
+"Status": "Adjustable",
+"Result": "Failure"
+},
+{
+"Operation": "Not adjustable",
+"Frequency": "51.0",
+"Voltage": "121",
+"Protection Mechanism": "Overfrequency Threshold Phase 2",
+"duration": ">=0.1",
+"duration2": "<=5",
+"Result": "Failure"
+},
+{
+"Protection Threshold": "Level 1",
+"Trigger Selection": "Whether to trigger is optional.",
+"Result": "Success"
+},
+{
+"Fault type": "Symmetrical phase jump",
+"Fault Type 2": "Phase Jump Immunity",
+"Result": "Success"
+},
+{
+"Frequency": "<f",
+"Operation Object": "Power Generation Unit",
+"Power Response": "pmin-limit=pm+δp",
+"Constraint": "δp=1/s*f1-f/fn*pref",
+"Result": "Success"
+},
+{
+"Operation": "Non-defining a new cosφ setting value",
+"Power Response": "Reactive power changes are synchronized with active power changes.",
+"Result": "Failure"
+},
+{
+"Status": "Automatically disconnected",
+"Protection Mechanism": "Detect islanding and disconnect power generation units",
+"Result": "Success"
+},
+{
+"Operation": "Configuration Settings",
+"Operation 2": "Use default settings",
+"Frequency": "51.5",
+"Operator": "Not a DSO",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Operation": "Off-site manual operation",
+"Operation Purpose": "Initial Startup",
+"Allow": "Deviate from observation time",
+"Allow 2": "Deviation from Climb Rate",
+"Result": "Failure"
+},
+{
+"Operation": "Local change of non-q setting value",
+"Status": "The new setting has reached a stable state.",
+"duration": "<=60s",
+"Result": "Failure"
+},
+{
+"Operation Object": "Interface Switch",
+"Protection Mechanism": "Power Relay",
+"Protection Mechanism 2": "Has corresponding rated current",
+"Protection Mechanism 3": "Has the corresponding short-circuit contribution capability of power plants",
+"Result": "Success"
+},
+{
+"Operation": "Non-run",
+"Frequency": "48.0",
+"duration": "unlimited",
+"Result": "Failure"
+},
+{
+"Operation": "Non-adjustment",
+"Operator": "Relevant Responsible Party",
+"Target": "This function and its settings",
+"Protection Mechanism": "Prevents unauthorized interference",
+"Result": "Failure"
+},
+{
+"Operation": "Requires more stringent characteristics",
+"Operator": "Responsible Party",
+"Power Response": "Follows the dashed line limit in Figure 5",
+"Result": "Success"
+},
+{
+"Operation": "Adjustable",
+"Frequency": "50.0",
+"Voltage": "121",
+"Protection Mechanism": "Overfrequency Threshold Phase 1",
+"duration": ">=0.1",
+"duration2": "<=100",
+"Result": "Failure"
+},
+{
+"Operation": "Non-configuration settings",
+"Operation 2": "Not using provided settings",
+"Operator": "dso",
+"Operator 2": "Responsible Party",
+"Target of Operation": "Power Plant",
+"duration": "intentional delay",
+"Result": "Failure"
+},
+{
+"Operation": "Settings",
+"Operation 2": "On-site adjustments",
+"Operation Object": "Power Generation Unit",
+"Protection Mechanism": "Prevents unauthorized interference",
+"Status": "Adjustable",
+"Result": "Success"
+},
+{
+"Frequency threshold": "50.05",
+"Frequency threshold step size": "0.05",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase Two",
+"Motion time step": "0.05",
+"Action Time": "5 hours later",
+"Result": "Failure"
+},
+{
+"Interface Protection System": "Implementation",
+"Available features and configuration settings": "Compliant with DSO requirements",
+"Available Features and Configuration Settings 2": "Compliant with Responsible Party Requirements",
+"Result": "Success"
+},
+{
+"Operation": "Programmable frequency threshold f1",
+"Frequency": "49.2",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Operation": "Series switch exists",
+"Operation 2": "None",
+"Target of Operation": "Any generator unit and the point of common coupling (POC)",
+"Result": "Success"
+},
+{
+"Operation": "Does not provide anti-interference capability",
+"Target of Operation": "Dynamic Voltage Change",
+"Status": "Contributes to power system stability",
+"Result": "Failure"
+},
+{
+"Operation": "Can be adjusted on-site",
+"Operation Object": "Voltage Range",
+"Result": "Success"
+},
+{
+"Status": "Active",
+"duration": "<=2s",
+"Power Response": "Available",
+"Result": "Success"
+},
+{
+"Operation": "Non-combined heating and power generation",
+"Power Response": "50",
+"Status": "en",
+"Voltage": "Insufficient",
+"Operation Object": "Power Generation Unit",
+"Status 2": "Exemption from requirements",
+"Result": "Failure"
+},
+{
+"Operation": "Adjustable",
+"Frequency": "50.0",
+"Voltage": "19",
+"Protection Mechanism": "Overfrequency Threshold Phase 1",
+"duration": ">=0.1",
+"duration2": "<=100",
+"Result": "Failure"
+},
+{
+"Frequency": "47.5",
+"duration": ">=30 minutes",
+"duration2": ">=90 minutes",
+"Result": "Failure"
+},
+{
+"Purpose": "Island Detection",
+"Method": "Narrow frequency threshold",
+"Activation method": "External signal",
+"Result": "Success"
+},
+{
+"Operation": "Run",
+"Frequency": "52.5",
+"duration": ">=30 minutes",
+"Result": "Failure"
+},
+{
+"Operation": "Shut down",
+"Frequency": "51.2",
+"Target of Operation": "Shutdown Threshold",
+"duration": "0",
+"Power Response": "Frequency Overfrequency Response Standard Settings",
+"Result": "Failure"
+},
+{
+"Voltage": "<= 120%",
+"Status": "Active",
+"Result": "Success"
+},
+{
+"Operation": "Non-run",
+"Frequency": "52.5",
+"duration": ">=30 minutes",
+"Result": "Failure"
+},
+{
+"Operation": "Configuration Settings",
+"Operation 2": "Use default settings",
+"Status": "Grid-connected operation",
+"Operator": "Power Generator",
+"Target of Operation": "Power Generation Equipment",
+"Result": "Success"
+},
+{
+"Power Response": "1",
+"Operation Object": "Sagging Coefficient",
+"Result": "Failure"
+},
+{
+"Operation": "Start power generation",
+"Frequency": "53.0",
+"Status": "Allowed",
+"Result": "Failure"
+},
+{
+"Connectivity Network": "Low-voltage power distribution network",
+"Power generation equipment": "Power generation equipment employing synchronous power generation technology",
+"Occurred": "Fault",
+"Requirement": "Voltage support not required.",
+"Reason": "The additional reactive current is expected to interfere with power grid protection equipment.",
+"Result": "Success"
+},
+{
+"Operator": "Power Plant",
+"Operation Object": "Power Generation Unit",
+"capacity": "<=150kva",
+"Power Response": "Active factor operating from underexcitement to overexcitement at cosφ=0.95",
+"Result": "Success"
+},
+{
+"Operation": "Trigger Phase 1",
+"Voltage": "0.2",
+"Protection Mechanism": "Undervoltage Protection",
+"duration": ">=0.1",
+"duration2": "<=100",
+"Status": "Action adjustable",
+"Result": "Success"
+},
+{
+"Target of Operation": "Small Power Generation Unit",
+"Target of Operation 2": "Hydropower",
+"Power of the object being operated": "<50kw",
+"Status": "OVR requirements can be waived",
+"Result": "Success"
+},
+{
+"Frequency": "49",
+"Status": "Continuously running",
+"Result": "Success"
+},
+{
+"Intentional delay": "Not provided",
+"duration": "0s",
+"Result": "Success"
+},
+{
+"Operation": "Non-configuration settings",
+"Operation 2": "Use default settings",
+"Status": "Grid-connected operation",
+"Operator": "Power Generator",
+"Target of Operation": "Power Generation Equipment",
+"Result": "Failure"
+},
+{
+"Frequency": "46.5",
+"duration": ">=10",
+"Status": "Continuing to run at least continuously",
+"Result": "Failure"
+},
+{
+"Operation": "Maintenance",
+"Status": "Manual Operation",
+"Operation Object": "Power Generation Unit",
+"duration": ">Observation time",
+"Power Response": ">Maximum Climb Rate",
+"Result": "Success"
+},
+{
+"Operation": "Non-recovery power",
+"Voltage": "Re-entering the voltage range",
+"Power": ">= 90% of the smaller of the power before the fault or the available power",
+"Recovery Time": "Provisions in 4.5.3 and 4.5.4",
+"Result": "Failure"
+},
+{
+"Operation": "Trip Interface Switch",
+"Target of Operation": "Power Plants and Distribution Networks",
+"Status": "Disconnected",
+"Result": "Success"
+},
+{
+"Frequency threshold": "46.95",
+"Frequency threshold step size": "0.05",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase Two",
+"Motion time step": "0.05",
+"Action Time": "5",
+"Result": "Failure"
+},
+{
+"Operation": "Does not provide anti-interference capability",
+"Target of Operation": "Power Generation Module Connection Technology",
+"Status": "Meets the required anti-interference capability",
+"Result": "Failure"
+},
+{
+"Overvoltage threshold": "Level 2",
+"Motion time step": "0.05",
+"Action Time": "5 hours later",
+"Result": "Failure"
+},
+{
+"Operation": "After a non-phase transition occurs",
+"Target of Operation": "Power Generation Module",
+"Target of Operation 2": "Asynchronous Power Generation Technology",
+"Fault type": "Symmetry",
+"Power Response": "90% of the smaller value",
+"Result": "Failure"
+},
+{
+"Operation": "Evaluation",
+"Target": "Mounting point",
+"Fault Type": "Short Circuit Current",
+"Status": "Switch selection meets characteristics",
+"Result": "Success"
+},
+{
+"Target of Operation": "Power Plant Connection Scheme",
+"Protection Mechanism": "Complies with DSO requirements",
+"Result": "Success"
+},
+{
+"Operation": "Abnormal operation",
+"Frequency": "53.0",
+"duration": ">=0",
+"duration2": ">=15",
+"duration3": "<=15",
+"Result": "Failure"
+},
+{
+"duration": ">=10s",
+"duration2": "<=600s",
+"Power Response": "Automatic Reconnection",
+"Result": "Success"
+},
+{
+"Input voltage": "<20%",
+"Frequency Protection": "Suppressed",
+"Result": "Success"
+},
+{
+"Operation": "Non-hydropower generation",
+"Power Response": "50",
+"Target of Operation": "Small Power Generation Unit",
+"Status": "Exemption Required",
+"Result": "Failure"
+},
+{
+"Frequency": "48",
+"duration": "infinite",
+"Status": "Continuously running",
+"Result": "Failure"
+},
+{
+"Operation": "Combined interface switch and main switch",
+"Operated Object": "Switching Device",
+"Operation Object 2": "Meets all requirements",
+"Result": "Success"
+},
+{
+"Operation": "Connect",
+"Operation Object": "Generation Unit and Common Connection Point",
+"Protection mechanism": "At least two switches connected in series",
+"Result": "Success"
+},
+{
+"Operation": "Reconnect",
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"Specified value": "Not specified",
+"duration": "1 minute",
+"Power Response": "<=10%",
+"Result": "Success"
+},
+{
+"Operation": "Non-rotating machinery",
+"Power Response": "49",
+"Status": "en",
+"Voltage": "Insufficient",
+"Operation Object": "Power Generation Unit",
+"Status 2": "Exemption from requirements",
+"Result": "Failure"
+},
+{
+"Functionality": "Vector Offset Detection",
+"Type": "Common Functions",
+"Result": "Success"
+},
+{
+"Operation": "Start power generation",
+"Frequency": "48.5",
+"Status": "Allowed",
+"Result": "Failure"
+},
+{
+"Operation": "Non-required",
+"Operator": "dso",
+"Target of Operation": "Protection Function",
+"Result": "Failure"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Energy Storage Unit",
+"Power Response": "Maintain zero power output",
+"Constraint": "Do not switch to charging mode",
+"Result": "Failure"
+},
+{
+"Operation": "Not provided",
+"Frequency": "<Standard Frequency",
+"Operation Object": "Power Generation Unit",
+"Status": "Possesses the ability",
+"Power Response": "Startup",
+"Result": "Failure"
+},
+{
+"Status": "Active",
+"duration": "<=2s",
+"Power Response": "Available",
+"Result": "Success"
+},
+{
+"Operation": "Non-synchronization",
+"Operation 2": "Execute",
+"Operation 3": "Disconnect",
+"Status": "Normal network operating conditions",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Operation": "Requirements",
+"Operator": "dso",
+"Target of Operation": "Protection Function",
+"Result": "Success"
+},
+{
+"Operation": "Configuration Settings",
+"Operation 2": "Use default settings",
+"Frequency": "50.2",
+"Operator": "Not a DSO",
+"Target of Operation": "Power Plant",
+"Result": "Success"
+},
+{
+"Operation": "Continuous operation",
+"Status": "Started",
+"Status 2": "Exit",
+"Target of Operation": "Protection System",
+"Status 3": "Prohibited",
+"Operation Object 2": "Interface Protection Relay",
+"Result": "Success"
+},
+{
+"Operation": "Non-triggering phase 1",
+"Voltage": "0.2",
+"Protection Mechanism": "Undervoltage Protection",
+"duration": ">=0.1",
+"duration2": "<=100",
+"Status": "Action adjustable",
+"Result": "Failure"
+},
+{
+"Power Response": "Active power response starts when frequency drops.",
+"Step response time": "After 30 seconds",
+"Inherent dead time": "2s",
+"Result": "Failure"
+},
+{
+"Operator": "Power Generation Unit",
+"Power Response": "Connection to Distribution Network",
+"Status": "Automatically disconnected",
+"Result": "Success"
+},
+{
+"Operation": "Run",
+"Frequency": "51.5",
+"duration": ">=30 minutes",
+"Result": "Success"
+},
+{
+"Power Response": "Reduction",
+"duration": ">=3s",
+"Result": "Success"
+},
+{
+"Voltage": "<= 1.2un",
+"Frequency": "<Threshold Second Stage",
+"Protection Mechanism": "Second Phase Activation",
+"Result": "Success"
+},
+{
+"Voltage": "1",
+"Protection Mechanism": "Frequency Protection Suppression",
+"Result": "Success"
+},
+{
+"Operation": "Not specified",
+"Frequency": "1",
+"Operator": "Responsible Party",
+"Target": "rocof immune value",
+"Protective Mechanism": "Immunity",
+"duration": ">=500",
+"Result": "Failure"
+},
+{
+"Operation": "Requirements",
+"Operator": "dso",
+"Fault Type": "Local Phenomenon",
+"Fault Type 2": "Circuit Breaker Tripping",
+"Status": "Provides numeric input conforming to 4.9.4",
+"Frequency": "Using threshold 4.9.2.6",
+"Protection Mechanism": "Switch to Narrow Bandwidth",
+"Protection Mechanism 2": "Enable frequency restriction window",
+"Protection Mechanism 3": "Associated with Additional Protection Functions",
+"Result": "Success"
+},
+{
+"Operation Object": "Power Generation Unit",
+"Protective Mechanism": "Phase-Jump Immune Level",
+"Result": "Success"
+},
+{
+"Operation": "Keep charging power constant",
+"Status": "Charging Mode",
+"Operator": "dso",
+"Target of Operation": "Energy Storage Unit",
+"Protection Mechanism": "Zero Power Output Mode",
+"Result": "Success"
+},
+{
+"Operation": "Unless otherwise requested",
+"Operator": "dso",
+"duration": "Performed in accordance with the requirements of the DSO and the responsible party.",
+"Power Response": "Performed in accordance with DSO and responsible party requirements.",
+"Result": "Failure"
+},
+{
+"Operator": "dso",
+"Operation Object": "Interface Protection",
+"Protection mechanism": "Used for switching to narrowband",
+"Result": "Success"
+},
+{
+"Status": "Active",
+"duration": ">Inherent dead time",
+"duration2": "<=2s",
+"Power Response": "Programmable Delay",
+"Result": "Success"
+},
+{
+"Operation": "Reactive power setpoint mode",
+"Status": "Control mode activated",
+"Power Response": "Configure activation/deactivation in the field",
+"Result": "Success"
+},
+{
+"Operation": "Measurement",
+"duration": "500ms",
+"Status": "Defines rocof immunity",
+"Result": "Success"
+},
+{
+"Protection mechanism": "Locked value",
+"Protection Mechanism 2": "Conforms to Figure 14",
+"Power Response": "Exhibits hysteresis characteristics",
+"Result": "Success"
+},
+{
+"Operation Object": "Power Generation Unit",
+"Operation Object 2": "Common Connection Point",
+"Protection mechanism": "At least two switches connected in series",
+"Result": "Success"
+},
+{
+"Frequency": "<= 50.0 Hz",
+"Power Response": "Automatic Reconnection",
+"Result": "Success"
+},
+{
+"Target of Operation": "Energy Storage Unit",
+"Power Response": "Increase charging power based on droop characteristics",
+"Charging Mode": "Activated",
+"Result": "Success"
+},
+{
+"Operation": "Inactive",
+"Frequency": "50.2",
+"Operation 2": "Use the actual frequency.",
+"Operation 3": "Calculate δp",
+"Target of Operation": "Power Plant",
+"Fault Type": "Frequency Too High",
+"Status": "Frequency Response Activated",
+"Operation Object 2": "Maximum Power Limit",
+"Operation Object 3": "Accuracy Assessment",
+"Prediction accuracy": "±10% of rated power",
+"duration": "1-minute average",
+"Power Response": "Active Power Response",
+"Result": "Failure"
+},
+{
+"Action": "Agreement reached",
+"Status": "Power reduction requirements cannot be met",
+"Operation Object": "Power Generation Unit",
+"Operation Object 2": "Specify Environment Conditions",
+"Status 2": "Acceptable environmental conditions",
+"Operator": "Manufacturer",
+"Operator 2": "Responsible Party",
+"Result": "Success"
+},
+{
+"Operator": "Power Plant",
+"Operation Object": "qu mode",
+"Status": "Active",
+"Result": "Success"
+},
+{
+"Status": "Running",
+"Operation Object": "Linear generator unit directly and synchronously connected",
+"Power Response": "Active Factor greater than 0.95",
+"Result": "Success"
+},
+{
+"Operation": "Non-interface switch functions are merged with the main switch",
+"Operated Object": "Single Switching Device",
+"Protection Mechanism": "Simultaneously meets interface switch requirements",
+"Protection Mechanism 2": "Simultaneously meets all requirements of the merged main switch or generator unit switch.",
+"Result": "Failure"
+},
+{
+"Frequency": "50.0",
+"Target": "First Stage",
+"Protection Mechanism": "Frequency below protection level",
+"duration": ">0.1",
+"duration2": "<100.0",
+"Result": "Failure"
+},
+{
+"Operation": "Non-disconnect operation",
+"Frequency": "51",
+"Operation 2": "Disconnect randomized frequency.",
+"Operator": "Relevant Responsible Party",
+"Target of Operation": "Power Generation Module",
+"Result": "Failure"
+},
+{
+"Frequency": "60",
+"Operator": "Power Plant",
+"duration": ">=500",
+"Status": "Stay Connected",
+"Status 2": "Running normally",
+"Result": "Failure"
+},
+{
+"Target of Operation": "Power Plant",
+"Power Response": "<= 12%",
+"Result": "Success"
+},
+{
+"Fault Location": "Internal fault in the power generation unit",
+"Interface Protection System": "Not responsible for disconnection.",
+"Result": "Success"
+},
+{
+"Operation": "Static precision",
+"Status": "qu mode",
+"Prediction accuracy": "Complies with clause 4.7.2.2",
+"Result": "Success"
+},
+{
+"Operation": "Adjustable",
+"Frequency": "51.0",
+"Voltage": "19",
+"Protection Mechanism": "Overfrequency Threshold Phase 1",
+"duration": ">=0.1",
+"duration2": "<=100",
+"Result": "Failure"
+},
+{
+"Power Generation Technology": "Non-Rotating Machinery",
+"Requirement": "Not exempt from this requirement",
+"Result": "Success"
+},
+{
+"Frequency threshold": "47.0",
+"Frequency threshold step size": "0.1",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase Two",
+"Motion time step": "0.05",
+"Action Time": "5",
+"Result": "Success"
+},
+{
+"Operation": "Non-configuration settings",
+"Operation 2": "Use default settings",
+"Frequency": "51.5",
+"Operator": "Not a DSO",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Operation": "Evaluation",
+"Power response": "1.15",
+"Operating Object": "Overvoltage Protection",
+"duration": "10 minutes",
+"Protection Mechanism": "Activate",
+"duration2": "<=3",
+"Result": "Success"
+},
+{
+"Parameter": "High Frequency",
+"Range": "[50.0, 52.0]hzand default setting = 50.2hz",
+"Result": "Success"
+},
+{
+"Operation": "Off-grid operation",
+"Fault Type": "Internal Fault in Power Plant",
+"Protection Mechanism": "Switch Coordination Operation",
+"Result": "Failure"
+},
+{
+"Operation": "Configuration Settings",
+"Operation 2": "Not using provided settings",
+"Frequency": "f1",
+"Operator": "dso",
+"Operator 2": "Responsible Party",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Operation": "Non-abnormal operation",
+"Frequency": "52.0",
+"duration": ">0",
+"Result": "Failure"
+},
+{
+"dso": "Specified threshold",
+"Rated current": ">16A",
+"Interface protection system": "Implemented as a dedicated device",
+"Interface Protection System 2": "Not integrated into the power generation unit",
+"Result": "Success"
+},
+{
+"Operation": "Supports on-site configuration control mode.",
+"Operation 2": "Not supported in on-site activation control mode",
+"Operation 3": "Supports on-site deactivation control mode.",
+"Operation Object": "Power Generation Unit",
+"Result": "Failure"
+},
+{
+"Operation": "Configuration",
+"Object of Operation": "Dynamic Characteristics",
+"Fault Type": "First-order filter",
+"duration": ">=3",
+"duration2": "<=60",
+"Result": "Success"
+},
+{
+"Frequency": "48.0",
+"Target": "Second Stage",
+"Protection Mechanism": "Frequency below protection level",
+"duration": ">0.1",
+"duration2": "<5.0",
+"Result": "Success"
+},
+{
+"Operation": "Non-abnormal operation",
+"Frequency": "48.5",
+"duration": ">=30",
+"duration2": ">=90",
+"duration3": "<=90",
+"Result": "Failure"
+},
+{
+"Operation": "Not reaching the minimum adjustment level",
+"Operation 2": "Non-disconnect power plant",
+"Operation 3": "Disconnect individual units",
+"Status": "Frequency Response Activated",
+"Frequency": ">f1",
+"Target of Operation": "Power Plant",
+"Fault Type": "Frequency Too High",
+"Operator": "dso",
+"Operator 2": "Responsible Party",
+"Result": "Failure"
+},
+{
+"Target Object": "Asynchronous Power Generation Technology Module",
+"Fault Type": "After a symmetrical phase transition occurs",
+"duration": "<=1 second",
+"Power Response": "Recovers to 90% of the lesser of the pre-fault power or available power.",
+"Result": "Success"
+},
+{
+"Responsible Party": "No specific settings specified",
+"Reason": "Normal operation startup or activity",
+"Action": "Connect or start power generation",
+"Frequency Range": "Specified in Column 3 of Table 4",
+"Voltage Range": "Specified in Column 3 of Table 4",
+"Observation Time": "Specified in Column 3 of Table 4",
+"Result": "Success"
+},
+{
+"Frequency": "52.5",
+"duration": ">=30 minutes",
+"duration2": ">=90 minutes",
+"Result": "Failure"
+},
+{
+"Operation": "Off-site manual operation",
+"Purpose of Operation": "Maintenance",
+"Allow": "Deviate from observation time",
+"Allow 2": "Deviation from Climb Rate",
+"Result": "Failure"
+},
+{
+"Category of overvoltage in line conductor": "1",
+"Neutral conductor overvoltage category": "1",
+"Power Generation Unit": "Single-phase Power Generation Unit",
+"Result": "Failure"
+},
+{
+"Generator set": "Maximum capacity >=",
+"Capability": "Able to reduce active power",
+"Result": "Success"
+},
+{
+"Operation": "Non-combined heating and power generation",
+"Power Response": "49",
+"Status": "en",
+"Voltage": "Insufficient",
+"Operation Object": "Power Generation Unit",
+"Status 2": "Exemption from requirements",
+"Result": "Failure"
+},
+{
+"Operation": "Non-reconnect",
+"Target of Operation": "Power Generation Module",
+"Power Response": "Unspecified value",
+"duration": "1 minute",
+"Result": "Failure"
+},
+{
+"Operation": "Allow disconnection",
+"Voltage": "Mutation exceeds 25%",
+"Result": "Success"
+},
+{
+"Operation": "Non-interface switch function combined with generator unit switch",
+"Operated Object": "Single Switching Device",
+"Protection Mechanism": "Simultaneously meets interface switch requirements",
+"Protection Mechanism 2": "Simultaneously meets all requirements of the merged main switch or generator unit switch.",
+"Result": "Failure"
+},
+{
+"Protection Mechanism": "Interface Protection Parameter Settings",
+"Protection Mechanism 2": "Not using the frt curves in Figures 6, 7, and 8",
+"Result": "Success"
+},
+{
+"Target of Operation": "Small Power Generation Unit",
+"Operation Object 2": "Fuel Cell",
+"Power of the object being operated": "<50kw",
+"Status": "OVR requirements can be waived",
+"Result": "Success"
+},
+{
+"Operation": "Non-power loss",
+"Protection Mechanism": "Automatic Switching Device",
+"Protection Mechanism 2": "Disconnect the power generation unit from the power distribution network",
+"Result": "Failure"
+},
+{
+"Operation": "Submit a request",
+"Operator": "dso",
+"Protection Mechanism": "Provides measures to prevent unauthorized interference",
+"Result": "Success"
+},
+{
+"Operation": "Configuration Settings",
+"Operation 2": "Use default settings",
+"Frequency": "50.2",
+"Operator": "Non-responsible party",
+"Target of Operation": "Power Plant",
+"duration": "intentional delay",
+"Result": "Success"
+},
+{
+"Operation": "Non-power generation",
+"Status": "System Topology",
+"Status 2": "Operating within the following specified operating range",
+"Result": "Failure"
+},
+{
+"Operation": "Non-power generation",
+"Frequency": "<Standard Frequency",
+"Operation Object": "ees Unit",
+"Power Response": "Startup",
+"Result": "Failure"
+},
+{
+"Operation": "Non-remote operation",
+"Operator": "dso",
+"Target Object": "Generator Set",
+"duration": "<=5s",
+"Power Response": "Stop",
+"Result": "Failure"
+},
+{
+"Requesting Party": "Responsible Party",
+"Stop active power output function": "Includes remote operation",
+"Result": "Success"
+},
+{
+"Operation": "On-site adjustments are not supported.",
+"Target of Operation": "Active Power Response Function Settings During Frequency Decrease",
+"Protection Mechanism": "Prevents unauthorized modification",
+"Result": "Failure"
+},
+{
+"Operation": "Not required",
+"Voltage": "Low-voltage distribution network",
+"Operator": "Power Plant",
+"Target Object": "Voltage Support",
+"Fault Type": "Fault",
+"Prediction accuracy": "Class B",
+"Status": "Applicable in en",
+"Result": "Failure"
+},
+{
+"Operation": "Abnormal operation",
+"Frequency": "49.0",
+"duration": ">0",
+"Result": "Success"
+},
+{
+"Operation": "Non-evaluation",
+"Operating Object": "Phase and Neutral Point Voltages",
+"Status": "Voltage assessment completed",
+"Result": "Failure"
+},
+{
+"Operation": "Start power generation",
+"Operation 2": "Unspecified",
+"Operation 3": "Abnormal Operation Startup",
+"Operation 4": "Inactive connection",
+"Operator": "Oscilloscope",
+"Target": "Settings",
+"Voltage": "Default value for column 3 of Table 4",
+"Frequency": "Column 3 of Table 4 (default)",
+"duration": "Default value for column 3 of Table 4",
+"Result": "Failure"
+},
+{
+"Operation": "Run",
+"Frequency": "52.0",
+"Status": "Not required to run",
+"Result": "Success"
+},
+{
+"Operation": "Activate",
+"Frequency": "50.2",
+"Operation 2": "Not using actual frequency",
+"Operation 3": "Calculate δp",
+"Target of Operation": "Power Plant",
+"Fault Type": "Frequency Too High",
+"Status": "Frequency Response Activated",
+"Operation Object 2": "Maximum Power Limit",
+"Operation Object 3": "Accuracy Assessment",
+"Prediction accuracy": "±10% of rated power",
+"duration": "1-minute average",
+"Power Response": "Active Power Response",
+"Result": "Failure"
+},
+{
+"Operation": "Non-resonant circuit test",
+"Target Object": "Photovoltaic Inverter",
+"Status": "Compliant with EN62116 standard",
+"Result": "Failure"
+},
+{
+"Target of Operation": "Power generation modules in a power plant",
+"Fault type": "Symmetrical phase jump",
+"Protection mechanism": "Phase-jump immunity",
+"Result": "Success"
+},
+{
+"Frequency threshold": "46.95",
+"Frequency threshold step size": "0.05",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase One",
+"Action time step": "0.1",
+"Action Time": "Post-100s",
+"Result": "Failure"
+},
+{
+"Operation": "Trigger",
+"Protection Mechanism": "Overvoltage Protection",
+"Voltage": "<= 1.30un",
+"duration": ">=0.1",
+"duration2": "<=5",
+"Result": "Success"
+},
+{
+"Frequency": ">= Threshold Second Stage",
+"Protection Mechanism": "Not Activated",
+"Status": "Active",
+"Result": "Success"
+},
+{
+"Voltage": "<= 110%",
+"Target of Operation": "Power Plant",
+"Power Response": ">= The specified output power allows for a reduction in the absolute minimum requirement",
+"Result": "Success"
+},
+{
+"Parameter": "Observation time",
+"Range": "[10,600]sand default setting=60s",
+"Result": "Success"
+},
+{
+"Operator": "Small power generation unit",
+"Target of Operation": "Combined Heating and Power Generation (chp)",
+"Status": "Exempt from general requirements",
+"Result": "Success"
+},
+{
+"Frequency": "52.5",
+"Status": "Not required to operate at this frequency",
+"Result": "Success"
+},
+{
+"Fault Type": "Frequency Too High",
+"Power Response": "pmax-limit",
+"Result": "Success"
+},
+{
+"Operation": "Evaluation",
+"Operation Object": "Phase-to-Phase Voltage",
+"Status": "Voltage assessment completed",
+"Result": "Success"
+},
+{
+"Operation": "Restore Power",
+"Status": "Voltage restored",
+"Voltage": "<= 1.3un",
+"Target of Operation": "Inverter Generator Unit",
+"Power Response": "Available Power",
+"Result": "Failure"
+},
+{
+"Operation": "Adjustable",
+"Frequency": "52.0",
+"Voltage": "121",
+"Protection Mechanism": "Overfrequency Threshold Phase 1",
+"duration": ">=0.1",
+"duration2": "<=100",
+"Result": "Failure"
+},
+{
+"Operation": "Required",
+"Target of Operation": "Small isolated distribution network",
+"Status": "More stringent time and frequency ranges",
+"Result": "Success"
+},
+{
+"Status": "No power generation",
+"Voltage": "Adjustable range",
+"Frequency": "Adjustable range",
+"Operator": "Power Plant",
+"duration": "Adjustable time",
+"State 2": "Generation",
+"Result": "Success"
+},
+{
+"Operation": "Abnormal operation",
+"Frequency": "47.0",
+"duration": ">=0",
+"duration2": ">=20",
+"duration3": "<=20",
+"Result": "Success"
+},
+{
+"Frequency threshold": "46.0",
+"Frequency threshold step size": "0.1",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase One",
+"Action time step": "0.1",
+"Action Time": "Post-100s",
+"Result": "Failure"
+},
+{
+"Operation": "Environmental conditions that meet the requirements as specified by the non-manufacturer",
+"Operation 2": "Non-manufacturer instructions may have limitations",
+"Operation 3": "Cannot be provided in chart format",
+"Condition": "Inherent design of the technology affects power reduction",
+"Operation Object": "Power Generation Unit",
+"Result": "Failure"
+},
+{
+"Operation": "Based on",
+"Operation 2": "Automatic disconnection function not provided",
+"Operation 3": "Non-compliant single-fault tolerance capability",
+"Operation 4": "Complies with Clause 4.13",
+"Operator": "Non-grid operator",
+"Result": "Failure"
+},
+{
+"Operation": "Do not use default settings",
+"Operating Object": "Static Voltage Range",
+"Voltage": "1.2µm",
+"Result": "Failure"
+},
+{
+"Operation": "Run",
+"Frequency": "1",
+"Status": "At least the minimum Rocof immunity requirement is met.",
+"Result": "Failure"
+},
+{
+"Power Response": "Limited to minimum power factor cosφ",
+"Active power": "<=pd",
+"Result": "Success"
+},
+{
+"Action": "Agree",
+"Operator": "Power Generator",
+"Operator 2": "dso",
+"Operator 3": "tso",
+"Operator 4": "Responsible Party",
+"Frequency": "Wideer frequency range",
+"duration": "longer runtime",
+"Result": "Success"
+},
+{
+"Operation": "Non-fuel cell",
+"Power Response": "50",
+"Target of Operation": "Small Power Generation Unit",
+"Status": "Exemption from OVR requirements",
+"Result": "Failure"
+},
+{
+"Operation Object": "Interface Switch",
+"Protection Mechanism": "Contactor",
+"Protection Mechanism 2": "Has corresponding rated current",
+"Protection Mechanism 3": "Has the corresponding short-circuit contribution capability of power plants",
+"Result": "Success"
+},
+{
+"Operator": "dso",
+"Object of Operation": "Power Generation Unit",
+"Status": "Configuration meets DSO and responsible party requirements.",
+"Result": "Success"
+},
+{
+"Operation": "Required precision",
+"Condition": "Deviates only from accuracy requirements",
+"Power Response": "Active Power pd",
+"Result": "Success"
+},
+{
+"Operator": "dso",
+"Operation Object": "Interface Protection",
+"Protection mechanism": "At least two configurable numeric inputs",
+"Result": "Success"
+},
+{
+"Operation": "Implement qu control mode",
+"Target of Operation": "Power Plant",
+"Protection Mechanism": "Voltage-Related Reactive Power Control",
+"Result": "Success"
+},
+{
+"Operation": "Required",
+"Voltage": "Low-voltage distribution network",
+"Operator": "Power Plant",
+"Target Object": "Voltage Support",
+"Fault Type": "Fault",
+"Prediction accuracy": "Class B",
+"Status": "Applicable in en",
+"Result": "Success"
+},
+{
+"Frequency threshold": "47.0",
+"Frequency threshold step size": "0.05",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase Two",
+"Motion time step": "0.05",
+"Action Time": "5 hours later",
+"Result": "Failure"
+},
+{
+"Operation": "Non-reduction of active power",
+"Voltage": ">Nominal value",
+"Target Object": "Generator Set",
+"Protection Mechanism": "Can be adjusted and disabled on-site",
+"Protection Mechanism 2": "Preventing Unauthorized Interference",
+"Power Response": "<= First-order filter tau=3 seconds",
+"Result": "Failure"
+},
+{
+"Operation": "Non-recovery power",
+"Status": "Voltage restored",
+"Voltage": "<= 1.3un",
+"Target of Operation": "Inverter Generator Unit",
+"Power Response": "Available Power",
+"Result": "Failure"
+},
+{
+"Frequency measurement": "In progress",
+"Frequency": "±10MHz resolution",
+"Result": "Success"
+},
+{
+"Operation": "Non-impact",
+"Object of Operation": "Inherent Design of Technology",
+"Power Response": "Affected Power Reduction Behavior",
+"Result": "Failure"
+},
+{
+"Operation": "Activate",
+"Frequency": "49.2",
+"Operation 2": "Not using actual frequency",
+"Operation 3": "Non-calculation of δp",
+"Target of Operation": "Power Plant",
+"Fault Type": "Frequency Too High",
+"Status": "Frequency Response Activated",
+"Operation Object 2": "Maximum Power Limit",
+"Operation Object 3": "Accuracy Assessment",
+"Prediction accuracy": "±10% of rated power",
+"duration": "1-minute average",
+"Power Response": "Active Power Response",
+"Result": "Failure"
+},
+{
+"Protection Mechanism": "Interface Protection Relay Disconnect Setting",
+"Status": "Prioritized over technical capabilities",
+"Result": "Success"
+},
+{
+"Operation": "Non-implementation control mode",
+"Target of Operation": "Power Plant",
+"Protection Mechanism": "Voltage-Related Reactive Power Control",
+"Result": "Failure"
+},
+{
+"Operation": "Non-run",
+"Frequency": "51.5",
+"Status": "Not required to run",
+"Result": "Failure"
+},
+{
+"Operator": "Small power generation unit",
+"Object of Operation": "Fuel Cell",
+"Status": "Exempt from general requirements",
+"Result": "Success"
+},
+{
+"switch": "second",
+"type": "electronic switching element",
+"controlsignal": "Can be turned off",
+"Status": "Prevents execution before the next reconnection",
+"Fault Type": "Detected",
+"Result": "Success"
+},
+{
+"Operation": "Composition of non-electronic switching components",
+"Operation 2": "Non-control signal shutdown",
+"Target": "Second switch",
+"Protection Mechanism": "Fault detected",
+"Protection Mechanism 2": "Prevents operation before reconnection",
+"Result": "Failure"
+},
+{
+"Operation": "Non-abnormal operation",
+"Frequency": "51.5",
+"duration": ">=0",
+"duration2": "<=0",
+"duration3": "<=15",
+"Result": "Failure"
+},
+{
+"Operation": "Non-switch cabinet auxiliary power supply failure",
+"Operation 2": "Non-switch safety disconnect",
+"duration": "immediately",
+"Result": "Failure"
+},
+{
+"Operation": "Non-power generation",
+"Operation 2": "Setting Function Parameters",
+"Operation 3": "Use standardized communication.",
+"Operator": "tso",
+"Target of Operation": "Power Generation Facilities",
+"Power Response": ">Threshold",
+"Status": "Possesses the ability",
+"Operation Object 2": "Operation and Control System",
+"Result": "Failure"
+},
+{
+"Status": "Running",
+"Operation Object": "Directly connected induction generator unit",
+"Application Level": "Micro Power Plant",
+"Power Response": "Active Factor greater than 0.95",
+"Result": "Success"
+},
+{
+"Constraints": "To prevent the risk of equipment damage or personal injury",
+"Power Response": "Allows a reduction in charging power",
+"Result": "Success"
+},
+{
+"Operation": "Non-start power generation",
+"Operation 2": "Unspecified",
+"Operation 3": "Normal Operation Startup",
+"Operation 4": "Inactive connection",
+"Operator": "Oscilloscope",
+"Target": "Settings",
+"Voltage": "Default value for column 3 of Table 4",
+"Frequency": "Column 3 of Table 4 (default)",
+"duration": "Default value for column 3 of Table 4",
+"Result": "Failure"
+},
+{
+"Static voltage range": "Lower limit",
+"Lower limit": ">= 20% of the rated voltage un",
+"Lower limit 2": "<=100% of rated voltage un",
+"Result": "Success"
+},
+{
+"Operation": "Non-description",
+"manufacturer": "manufacturer",
+"Status": "Possible limitations",
+"Object to be operated on": "Environmental conditions that meet the requirements",
+"Result": "Failure"
+},
+{
+"Operation": "Evaluation",
+"Operation 2": "Non-selection switch",
+"Fault Type": "Power Plant's Contribution to Short-Circuit Current",
+"Result": "Failure"
+},
+{
+"Operation": "Non-configuration settings",
+"Operation 2": "Use default settings",
+"Frequency": "49.2",
+"Operator": "Non-responsible party",
+"Target of Operation": "Power Plant",
+"duration": "intentional delay",
+"Result": "Failure"
+},
+{
+"Fault Type": "Fire Hazard",
+"Protection Measures": "Based on DSO protection standards and network protection coordination",
+"Protective Measure 2": "According to hd",
+"Result": "Success"
+},
+{
+"Power Generation Unit": "Capacity <",
+"Power Generation Technology": "Fuel Cells",
+"Requirement": "Exemption from this requirement",
+"Result": "Success"
+},
+{
+"Operator": "DSO and manufacturer reach an agreement",
+"Power Response": "Provides continuous reactive power compensation",
+"Result": "Success"
+},
+{
+"Fault Type": "Electric Shock",
+"Protection Measures": "Based on DSO protection standards and network protection coordination",
+"Protective Measure 2": "According to hd",
+"Result": "Success"
+},
+{
+"Frequency measurement": "In progress",
+"Frequency": "±10MHz resolution",
+"Result": "Success"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Power plant designed at a specific site",
+"Protection Mechanism": "Only DSO requirements need to be implemented in control mode.",
+"Result": "Success"
+},
+{
+"Operation": "Supports on-site configuration control mode.",
+"Operation 2": "Non-supported on-site activation control mode",
+"Operation 3": "Control mode not supported for on-site shutdown",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Operation": "Non-abnormal operation",
+"Frequency": "49.0",
+"duration": ">=30",
+"duration2": "<=30",
+"duration3": "<=90",
+"Result": "Failure"
+},
+{
+"Voltage": ">110%",
+"Protection Mechanism": "Handled according to the undervoltage and overvoltage ride-through immunity limits in section 4.5.3",
+"Result": "Success"
+},
+{
+"Operation": "Run",
+"Frequency": "46",
+"Status": "Running until the interface protection device activates.",
+"Result": "Failure"
+},
+{
+"Operation": "Non-trip interface switch",
+"Target of Operation": "Power Plants and Distribution Networks",
+"Status": "Disconnected",
+"Result": "Failure"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"Power Response": "Does not exceed maximum gradeability",
+"Result": "Success"
+},
+{
+"Frequency": "50.2",
+"Operation Target": "Threshold Frequency",
+"Power Response": "Frequency Overfrequency Response Standard Settings",
+"Result": "Success"
+},
+{
+"Overvoltage threshold": "Level 1",
+"Action time step": "0.1",
+"Action Time": "100",
+"Result": "Failure"
+},
+{
+"Target": "Frequency Over-frequency Response",
+"parameter": "Shutdown threshold",
+"Frequency": "<=f1",
+"Fault type": "Shutdown",
+"Result": "Failure"
+},
+{
+"Frequency threshold": "46.0",
+"Frequency threshold step size": "0.1",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase One",
+"Action time step": "0.1",
+"Action Time": "Post-100s",
+"Result": "Failure"
+},
+{
+"Operation": "Abnormal operation",
+"Frequency": "51.5",
+"duration": ">=0",
+"duration2": ">=15",
+"duration3": "<=15",
+"Result": "Failure"
+},
+{
+"Protection Mechanism": "Restricted Frequency Window",
+"Frequency": "Use the under-frequency and over-frequency thresholds from 4.9.2.5 and 4.9.2.6",
+"Result": "Success"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"Voltage": "Control contribution form specified by DSO",
+"Result": "Success"
+},
+{
+"Operation": "Abnormal operation",
+"Frequency": "47.5",
+"duration": ">=0",
+"duration2": "<=0",
+"duration3": "<=20",
+"Result": "Failure"
+},
+{
+"Voltage": "21.0",
+"Protection Mechanism": "Frequency below protection level",
+"Result": "Success"
+},
+{
+"Operation": "Non-disconnect operation",
+"Frequency": "52",
+"Operation 2": "Disconnect non-randomized frequency.",
+"Operator": "Relevant Responsible Party",
+"Target of Operation": "Power Generation Module",
+"Result": "Failure"
+},
+{
+"Constraint": "Applicable",
+"Maximum gradeability": "Distribution system operator regulations",
+"Power ramp rate": "<=Maximum ramp rate",
+"Result": "Success"
+},
+{
+"Voltage": "1.0-1.2µm",
+"Protection Mechanism": "Overvoltage Protection",
+"duration": "0.1-100 seconds",
+"Result": "Success"
+},
+{
+"Operation": "Not requiring more stringent characteristics",
+"Frequency": "<49Hz",
+"Operator": "Responsible Party",
+"Power Response": "Maximum Allowable Cutoff Rate",
+"Result": "Failure"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Responsible Party",
+"Fault Type": "Local Phenomenon",
+"Protection Mechanism": "Switch to Narrow Bandwidth",
+"Result": "Success"
+},
+{
+"Operation": "Non-configuration",
+"Object of Operation": "Dynamic Characteristics",
+"Fault Type": "First-order filter",
+"duration": ">=3",
+"duration2": "<=60",
+"Result": "Failure"
+},
+{
+"Operation": "Reach minimum adjustment level",
+"Operation 2": "Non-disconnect power plant",
+"Operation 3": "Disconnect individual units",
+"Status": "Frequency Response Activated",
+"Frequency": ">f1",
+"Target of Operation": "Power Plant",
+"Fault Type": "Frequency Too High",
+"Operator": "dso",
+"Operation Object 2": "Multi-unit Power Plant",
+"Result": "Failure"
+},
+{
+"Voltage": "Terminal Voltage",
+"Operation Object": "Power Generation Unit",
+"Protection Mechanism": "Meets UVRT requirements",
+"Result": "Success"
+},
+{
+"Status": "Active",
+"Frequency": "<f1",
+"Status 2": "Disabled",
+"Result": "Success"
+},
+{
+"Protection Function": "Overvoltage Protection",
+"Evaluation Method": "Valid Values",
+"Result": "Success"
+},
+{
+"Operation": "Power Reduction",
+"Frequency": "49",
+"Power Response": "Reducing pmax by 2% per 1 Hz",
+"Result": "Failure"
+},
+{
+"Operation": "Discontinuous operation",
+"Frequency": "52",
+"Status": "Continuously running",
+"Result": "Failure"
+},
+{
+"Responsible Party": "No specific settings specified",
+"dso": "No specific settings specified",
+"Default settings for reconnection after an interface protection incident": "Regulations in column 3 of Table 3",
+"Result": "Success"
+},
+{
+"Operation": "Run",
+"Frequency": "2",
+"Status": "At least the minimum Rocof immunity requirement is met.",
+"Result": "Success"
+},
+{
+"Operation": "Power Generation",
+"Operation 2": "Monitoring",
+"Operation 3": "Use standardized communication.",
+"Operator": "tso",
+"Target of Operation": "Power Generation Facilities",
+"Power Response": ">Threshold",
+"Status": "Possesses the ability",
+"Operation Object 2": "Operation and Control System",
+"Result": "Success"
+},
+{
+"Operation": "Charge from AC side",
+"Operation 2": "Cannot",
+"Operation 3": "Not maintaining zero power output state",
+"Operation 4": "Switch to charging mode.",
+"Status": "DC Coupled",
+"Target of Operation": "Energy Storage Unit",
+"Status 2": "Exemption",
+"Result": "Failure"
+},
+{
+"Operation": "Run",
+"Voltage": "<= 1.10un",
+"Status": "Continuously running",
+"Result": "Success"
+},
+{
+"Action": "Request to prevent unauthorized interference",
+"Operator": "dso",
+"Protection Mechanism": "Provides protective measures such as passwords or seals",
+"Result": "Success"
+},
+{
+"Power Generation Unit": "Wind Power Generation Unit",
+"Requirements": "Complies with en",
+"Result": "Success"
+},
+{
+"Operation": "Non-run",
+"Frequency": "Specifies rocof variation",
+"Status": "Connection maintained and functioning normally",
+"Result": "Failure"
+},
+{
+"Operation": "Non-configuration settings",
+"Operation 2": "Not using provided settings",
+"Operator": "dso",
+"Operator 2": "Responsible Party",
+"Target of Operation": "Power Plant",
+"Power Response": "Sagging",
+"Result": "Failure"
+},
+{
+"Target of Operation": "Power Plant",
+"Protection Mechanism": "Capable of operation within the limits of 4.7.2.2",
+"Result": "Success"
+},
+{
+"Operation": "Non-active power output has changed.",
+"Operation 2": "Disable power-related control mode (cosp).",
+"Operation 3": "Define a new cosφ setting value not based on the set characteristic curve",
+"Result": "Failure"
+},
+{
+"Function": "rocof trip",
+"Type": "Common Functions",
+"Result": "Success"
+},
+{
+"Operation": "Non-power generation",
+"Voltage": "Continuous operating voltage range",
+"Frequency": "<Standard Frequency",
+"Operation Object": "Power Generation Unit",
+"Power Response": "Startup",
+"Result": "Failure"
+},
+{
+"Operation": "Control the terminals",
+"Operation Object": "Power Generation Unit",
+"Result": "Success"
+},
+{
+"Operator": "Power Plant",
+"Target of Operation": "Power Generation Module",
+"Fault Type": "Phase Jump",
+"duration": "<=3s",
+"Power Response": "Recovers to 90% of the smaller of the pre-fault power or available power.",
+"Result": "Success"
+},
+{
+"Voltage": "Insufficient",
+"moduletype": "chp",
+"power": "<50kw",
+"Status": "Requirements can be waived",
+"Result": "Success"
+},
+{
+"Operation": "Non-evaluate connectivity capabilities",
+"Status": "Grid-connected operation",
+"Voltage": ">UVRT curve voltage threshold",
+"duration": "<=UVRT curve time threshold",
+"Status 2": "Not disconnected from the network",
+"Protection Mechanism": "Maintain Grid Connection",
+"Result": "Failure"
+},
+{
+"Operation": "Non-interface switch operation",
+"Fault Type": "Auxiliary Power Supply Failure",
+"Status": "Safely disconnected",
+"Result": "Failure"
+},
+{
+"Event": "Automatic reconnection after incident",
+"Protection Function": "Interface Protection",
+"Frequency Range": "The range shown in column 2 of Table 3",
+"Voltage Range": "The range shown in column 2 of Table 3",
+"Observation Time": "Not within the range shown in column 2 of Table 3",
+"Result": "Failure"
+},
+{
+"Operation": "An active method for testing via a resonant circuit",
+"Operator": "dso",
+"Target of Operation": "Isolation Phenomenon",
+"Result": "Success"
+},
+{
+"Operation": "Off-grid operation",
+"Status": "Generating",
+"Target of Operation": "Power Plant",
+"Condition": "Irrelevant to system topology",
+"Condition 2": "Unrelated to interface protection settings",
+"Protection Mechanism": "Capable of operating within the scope specified in 4.4",
+"Result": "Failure"
+},
+{
+"Operation": "Non-evaluation",
+"Operation 2": "Non-selection switch",
+"Fault Type": "Short Circuit Current",
+"Result": "Failure"
+},
+{
+"Power generation unit": "Exists",
+"Requirements": "Complies with en",
+"Result": "Success"
+},
+{
+"Operation": "Active power output has changed.",
+"Operation 2": "Enable power-related control mode (cosp).",
+"Operation 3": "Define a new cosφ setting value based on the set characteristic curve.",
+"Result": "Success"
+},
+{
+"Operation": "Frequency decrease",
+"Frequency": "49.5",
+"Power Response": "Reducing pmax by 10% per 1 Hz",
+"Result": "Failure"
+},
+{
+"Target of Operation": "Interface Protection Settings",
+"Protection mechanism": "Treat as parameter value",
+"Protection Mechanism 2": "Unrestricted broader technical capabilities of power generation modules",
+"Result": "Success"
+},
+{
+"Operation Object": "Power Generation Unit",
+"Voltage": "Control is applied to the terminals",
+"Result": "Success"
+},
+{
+"Operation": "Environmental conditions that meet the requirements as specified by the non-manufacturer",
+"Operation 2": "Manufacturer's instructions may impose limitations",
+"Operation 3": "Can be provided in chart format",
+"Condition": "Inherent design of the technology affects power reduction",
+"Operation Object": "Power Generation Unit",
+"Result": "Failure"
+},
+{
+"Frequency": "51.5",
+"duration": ">=30 minutes",
+"duration2": ">=90 minutes",
+"Result": "Success"
+},
+{
+"Target of Operation": "Photovoltaic Power Generation Unit",
+"Power Response": "Capable of reducing power across the entire droop characteristic range.",
+"Result": "Success"
+},
+{
+"Voltage": "<Lower limit of static voltage range",
+"Operator": "Inverter connected to power generation unit",
+"Power Response": "Reduced to below 10% of rated current",
+"Result": "Success"
+},
+{
+"Operation": "Non-configuration settings",
+"Operation 2": "Do not use default settings",
+"Frequency": "49.2",
+"Operator": "Not a DSO",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Status": "Emerging Technology",
+"Power Response": "Cumulative maximum capacity has reached the threshold.",
+"Status 2": "Status canceled",
+"Result": "Success"
+},
+{
+"Operation": "Non-application voltage undervoltage protection",
+"Target of Operation": "Micro-generator System",
+"Status": "Inapplicable Phase 2",
+"Result": "Failure"
+},
+{
+"Operation": "Configuration",
+"Object to be operated on": "Characteristic curve",
+"Voltage": "Maximum value is configurable.",
+"Protection Mechanism": "Connecting Three Lines",
+"Result": "Success"
+},
+{
+"Operation": "Do not increase charging power",
+"Operation 2": "Reduce charging power",
+"Status": "Maximum Charging Capacity",
+"Target of Operation": "Energy Storage Unit",
+"Result": "Failure"
+},
+{
+"Operation": "Testing via resonant circuit",
+"Operator": "dso",
+"Target": "Island Detection",
+"Protection Mechanism": "Active Approach",
+"Result": "Success"
+},
+{
+"Operation": "Non-reducing current",
+"Voltage": "Outside static voltage range",
+"Possesses": "Voltage dip recovery capability",
+"Power Generation Technology": "Connecting to the Power Grid via Inverters",
+"Current": "<=10% of rated current",
+"Result": "Failure"
+},
+{
+"Operation": "Setup not provided by DSO and responsible party",
+"Target of Operation": "Power Plant",
+"Operation Object 2": "f1",
+"Object 3": "Hanging",
+"Target 4": "Intentional Delay",
+"Result": "Failure"
+},
+{
+"Operation": "Non-run",
+"Frequency": "47",
+"Status": "Running until the interface protection device activates.",
+"Result": "Failure"
+},
+{
+"Operation": "Non-abnormal operation",
+"Frequency": "51.5",
+"duration": ">=30",
+"duration2": ">=90",
+"duration3": "<=90",
+"Result": "Failure"
+},
+{
+"Function": "Switch to narrow frequency band",
+"Type": "Common Functions",
+"Result": "Success"
+},
+{
+"Single point of failure": "occurred",
+"Safety Function": "Non-Disabled",
+"Result": "Success"
+},
+{
+"Voltage": "<=120%un",
+"Protection Mechanism": "Works normally",
+"Result": "Success"
+},
+{
+"Operation": "Run",
+"Frequency": "49.0",
+"duration": "unlimited",
+"Result": "Success"
+},
+{
+"Operation": "Non-conversion trip",
+"Operator": "dso",
+"Target": "Island Detection",
+"Protection Mechanism": "Active Approach",
+"Result": "Failure"
+},
+{
+"Operation": "On-site adjustment for enabling and disabling",
+"Target": "This function and its settings",
+"Result": "Success"
+},
+{
+"Operation": "Voltage support not required.",
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"Protection Mechanism": "Possesses the ability to manage reactive power",
+"Protection Mechanism 2": "Possesses the ability to manage active power generation",
+"Protection Mechanism 3": "As required by Clause 4.7",
+"Result": "Failure"
+},
+{
+"Operation": "Remote change of non-cosφ setpoint",
+"Status": "The new setting has reached a stable state.",
+"duration": "<=60s",
+"Result": "Failure"
+},
+{
+"Operation": "Power Factor Setting Mode",
+"Status": "Control mode activated",
+"Power Response": "Configure activation/deactivation in the field",
+"Result": "Success"
+},
+{
+"Voltage": "<=Maximum allowable voltage",
+"Frequency": "<= Maximum allowed frequency",
+"duration": ">=Observation time",
+"Status": "Connection allowed and power generation started.",
+"Result": "Success"
+},
+{
+"Operation": "Receive input port command",
+"Operation 2": "Non-stop active power output",
+"Target Object": "Generator Set",
+"Power response": ">0.8kW",
+"duration": "<=5s",
+"Result": "Failure"
+},
+{
+"Power Response": "2",
+"Operation Object": "Sagging Coefficient",
+"Result": "Success"
+},
+{
+"Operation": "Non-power reduction",
+"Frequency": "49",
+"Power Response": "Reducing pmax by 2% per 1 Hz",
+"Result": "Failure"
+},
+{
+"Operation": "Define Settings",
+"Operator": "dso",
+"Power Response": "Active power response is disabled when frequency drops.",
+"Result": "Failure"
+},
+{
+"Status": "Disabled",
+"Power Response": "Limited Variation",
+"Result": "Success"
+},
+{
+"Frequency": "49",
+"duration": "infinite",
+"Status": "Continuously running",
+"Result": "Success"
+},
+{
+"Operator": "External signal",
+"Target of Operation": "Protection Phase",
+"Status": "Disabled",
+"Result": "Success"
+},
+{
+"Protection Function": "Overvoltage Protection",
+"Number of protection thresholds": "Two completely independent protection thresholds",
+"Result": "Success"
+},
+{
+"Operation": "Non-combined heating",
+"Power Response": "50",
+"Target of Operation": "Small Power Generation Unit",
+"Status": "Exemption from OVR requirements",
+"Result": "Failure"
+},
+{
+"Target of Operation": "Power Generation Unit within the Power Plant",
+"Protection mechanism": "Having the same level of Rocof immunity",
+"Result": "Success"
+},
+{
+"Operation": "Run",
+"Frequency": "48.5",
+"duration": ">=30 minutes",
+"Result": "Success"
+},
+{
+"Frequency threshold": "46.0",
+"Frequency threshold step size": "0.1",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase Two",
+"Motion time step": "0.05",
+"Action Time": "5 hours later",
+"Result": "Failure"
+},
+{
+"Operation Object": "ees Unit",
+"Power Response": "Both charging and generating modes provide active power response during frequency drop.",
+"Result": "Success"
+},
+{
+"Status": "Automatic Reconnection",
+"Fault type": "Open circuit",
+"Power Response": "Default Value",
+"Result": "Failure"
+},
+{
+"Operation": "Disconnect if not in accordance with the interface protection settings in Chapter 4.9",
+"Frequency": ">Upper limit of operating range",
+"Result": "Failure"
+},
+{
+"Voltage": "2.1",
+"Operation": "Discontinuous operation",
+"Status": "Power Generation Process",
+"Result": "Failure"
+},
+{
+"Frequency": "Non-corresponding adjustment value",
+"Objective": "To bring the power distribution network into a controllable state.",
+"Result": "Success"
+},
+{
+"Operation": "Supports on-site configuration control mode.",
+"Operation 2": "Supports on-site activation control mode.",
+"Operation 3": "Supports on-site deactivation control mode.",
+"Operation Object": "Power Generation Unit",
+"Result": "Success"
+},
+{
+"unit": "Power generation unit",
+"switch": "connected",
+"Protection Mechanism": "Adapted to Short-Circuit Contribution",
+"Result": "Success"
+},
+{
+"Operation": "Non-power generation",
+"Operation 2": "Non-monitoring",
+"Operation 3": "Use standardized communication.",
+"Operator": "tso",
+"Target of Operation": "Power Generation Facilities",
+"Power Response": ">Threshold",
+"Status": "Possesses the ability",
+"Operation Object 2": "Operation and Control System",
+"Result": "Failure"
+},
+{
+"dso": "Requires adjustable settings on-site",
+"Prevention measures": "Provide measures to prevent unauthorized interference",
+"Result": "Success"
+},
+{
+"Operation": "Not specified",
+"Frequency": "2",
+"Operator": "Responsible Party",
+"Target": "rocof immune value",
+"Protective Mechanism": "Immunity",
+"duration": ">=500",
+"Result": "Failure"
+},
+{
+"Voltage": "<= 1.10un",
+"Power Response": "Maintains output power over the continuous operating voltage range",
+"Result": "Success"
+},
+{
+"Parameter": "Low Frequency",
+"Range": "[47.0, 50.0]hzand default setting = 49.5hz",
+"Result": "Success"
+},
+{
+"Operation": "Off-site adjustment",
+"Operator": "dso",
+"Target of Operation": "Zero Current Mode Function Settings",
+"Protection Mechanism": "Prevents unauthorized interference",
+"Result": "Failure"
+},
+{
+"Status": "Active",
+"duration": ">=Action time first stage",
+"Protection Mechanism": "Over-frequency Phase 1",
+"Result": "Success"
+},
+{
+"Status": "Steady-state voltage is close to maximum voltage",
+"Fault Type": "Voltage Sudden Change",
+"State 2": "May cause overvoltage for several seconds.",
+"Result": "Success"
+},
+{
+"Operation": "Non-run",
+"Frequency": "2",
+"Status": "At least the minimum Rocof immunity requirement is met.",
+"Result": "Failure"
+},
+{
+"Protection Threshold": "Phase 1",
+"Voltage threshold": "<=1",
+"Voltage threshold step size": "0.01",
+"Action time step": "0.1",
+"Triggerable": "Optional",
+"Action Time": "100",
+"Result": "Success"
+},
+{
+"Voltage": "Restored to the continuous operating voltage range",
+"Operator": "Generator Module",
+"duration": "<=1s",
+"Power Response": "Power before the fault or 90% of available power",
+"Result": "Success"
+},
+{
+"Operation": "Do not evaluate the voltage between all phases and the neutral point",
+"Status": "Connecting Neutral Point",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Function": "Transfer Trip",
+"Type": "Common Functions",
+"Result": "Success"
+},
+{
+"Operation": "Abnormal operation",
+"Frequency": "48.5",
+"duration": ">=30",
+"duration2": "<=30",
+"duration3": "<=90",
+"Result": "Success"
+},
+{
+"switch": "at least one",
+"Protection Mechanism": "Overvoltage Category 2",
+"Result": "Success"
+},
+{
+"Status": "Maximum apparent power reached",
+"Power Response": "Priority p or q or active factor undefined",
+"Result": "Success"
+},
+{
+"Protection Mechanism": "Security standards require disconnection.",
+"Status": "Disconnected",
+"Result": "Success"
+},
+{
+"Operator": "Power Plant",
+"Constraint": "Power response cannot increase at the specified rate of creep.",
+"duration": "random value [1min, 10min] or later",
+"Result": "Success"
+},
+{
+"Operation": "Non-hydropower generation",
+"Power Response": "50",
+"Target of Operation": "Small Power Generation Unit",
+"Status": "Exemption Required",
+"Result": "Failure"
+},
+{
+"Power Response": "<Minimum Adjustment Level",
+"Status": "Disconnectable",
+"Result": "Success"
+},
+{
+"Operation": "Power generation operation",
+"Operator": "Power Plant",
+"Status": "Operating Capability",
+"Voltage": "Specified Range",
+"Frequency": "Specified range",
+"Result": "Success"
+},
+{
+"Operation": "Unauthorized reduction of charging power",
+"Status": "Risk of equipment damage or personal injury exists.",
+"Result": "Failure"
+},
+{
+"Operator": "Generator Module",
+"current": ">16a",
+"Protection Mechanism": "Interface protection system as dedicated equipment",
+"Result": "Success"
+},
+{
+"Operation": "Undefined different UVRT characteristic curves",
+"Operator": "Responsible Party",
+"Voltage-Time Curve": "<=Figure 6 Most Strict Curve",
+"Result": "Failure"
+},
+{
+"Operation": "Run",
+"Frequency": "53.0",
+"Status": "Not required to run",
+"Result": "Failure"
+},
+{
+"Operation": "The interface switch function is merged with the generator unit switch",
+"Operated Object": "Single Switching Device",
+"Protection Mechanism": "Simultaneously meets interface switch requirements",
+"Protection Mechanism 2": "Simultaneously meets all requirements of the merged main switch or generator unit switch.",
+"Result": "Success"
+},
+{
+"Operator": "Generation Unit",
+"Power Response": "Without DC Current Injection",
+"Result": "Success"
+},
+{
+"unit": "Power generation unit",
+"switch": "connected",
+"Protection Mechanism": "Independent Severing Capability",
+"Protection Mechanism 2": "Adapted to Rated Current",
+"Result": "Success"
+},
+{
+"Power Generation Unit": "Capacity>=",
+"Requirement": "Not exempt from this requirement",
+"Result": "Success"
+},
+{
+"Operation": "Reach minimum adjustment level",
+"Operation 2": "Disconnect the power plant",
+"Operation 3": "Disconnect individual units",
+"Status": "Frequency Response Activated",
+"Frequency": ">f1",
+"Target of Operation": "Power Plant",
+"Fault Type": "Frequency Too High",
+"Operator": "dso",
+"Operator 2": "Responsible Party",
+"Result": "Success"
+},
+{
+"Operation": "No consensus",
+"Status": "Power reduction requirements cannot be met",
+"Operation Object": "Power Generation Unit",
+"Operation Object 2": "Specify Environment Conditions",
+"Status 2": "Acceptable environmental conditions",
+"Operator": "Manufacturer",
+"Operator 2": "Responsible Party",
+"Result": "Failure"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"Power Response": "Droop settings provided by DSO and the responsible party",
+"Result": "Success"
+},
+{
+"Operation": "Remote change of non-q setting value",
+"Status": "The new setting has reached a stable state.",
+"duration": "<=60s",
+"Result": "Failure"
+},
+{
+"Target of Operation": "Small Power Generation Unit",
+"Operation Object 2": "chp",
+"Power of the object being operated": "<50kw",
+"Status": "OVR requirements can be waived",
+"Result": "Success"
+},
+{
+"Status": "Active",
+"Frequency": "<f1",
+"Status 2": "Disabled",
+"Result": "Success"
+},
+{
+"Operation": "Start power generation",
+"Voltage": "0.85",
+"Status": "Allowed",
+"Result": "Success"
+},
+{
+"Status": "Stay Connected",
+"Protection mechanism": "Depends on interface protection settings.",
+"Result": "Success"
+},
+{
+"Operation": "Keep",
+"Frequency": "<Normal frequency of the connection point",
+"Status": "Stable Operation",
+"Power Response": "Minimize the reduction of maximum active power as much as possible.",
+"Result": "Success"
+},
+{
+"Operation": "Non-assessment accuracy",
+"Protection Mechanism": "Not considering the impact of PoC load",
+"Protection Mechanism 2": "Only considers power plant behavior",
+"Result": "Failure"
+},
+{
+"Voltage": "1.0-1.30µm",
+"Protection Mechanism": "Overvoltage Protection",
+"duration": "0.1-5 seconds",
+"Result": "Success"
+},
+{
+"Operation": "Configuration Settings",
+"Operation 2": "Settings not provided using DSO",
+"Status": "Grid-connected operation",
+"Operator": "Power Generator",
+"Target of Operation": "Power Generation Equipment",
+"Result": "Failure"
+},
+{
+"Voltage": "Insufficient",
+"Power Generation Unit": "chp",
+"Power": "<50kW",
+"Standard": "en",
+"Request": "Disconnect",
+"Requirement 2": "Exemption from relevant requirements",
+"Result": "Success"
+},
+{
+"Operation": "Provide settings",
+"Operation 2": "Apply the default settings from Table 2.",
+"Result": "Failure"
+},
+{
+"Operation": "Activate",
+"Frequency": "50.2",
+"Operation 2": "Not using actual frequency",
+"Operation 3": "Non-calculation of δp",
+"Target of Operation": "Power Plant",
+"Fault Type": "Frequency Too High",
+"Status": "Frequency Response Activated",
+"Operation Object 2": "Maximum Power Limit",
+"Operation Object 3": "Accuracy Assessment",
+"Prediction accuracy": "±10% of rated power",
+"duration": "1-minute average",
+"Power Response": "Active Power Response",
+"Result": "Failure"
+},
+{
+"Operation": "Switch to narrow frequency band",
+"Operator": "dso",
+"Target": "Island Detection",
+"Protection Mechanism": "Active Approach",
+"Result": "Success"
+},
+{
+"Operation": "Non-adjustment settings",
+"Operator": "dso",
+"Target": "Upper limit of static voltage range",
+"Voltage": "<= 1.3un",
+"Result": "Failure"
+},
+{
+"Operation": "Increase charging power",
+"Status": "Charging Mode",
+"Target of Operation": "Energy Storage Unit",
+"Power Response": "Sagging Characteristics",
+"Result": "Success"
+},
+{
+"Operation": "Non-evaluation signal",
+"Target of Operation": "Protection Function",
+"Voltage": "Assessment",
+"Frequency": "Assessment",
+"Protection Mechanism": "Minimum Precision Requirement",
+"Protection Mechanism 2": "Frequency Measurement Error",
+"Protection Mechanism 3": "±0.05",
+"Protection Mechanism 4": "Voltage Measurement Error",
+"Protection Mechanism 5": "±1%",
+"Result": "Failure"
+},
+{
+"Status": "Active",
+"duration": ">=3s",
+"duration2": "<=60s",
+"Power Response": "Dynamic response of a first-order filter",
+"Result": "Success"
+},
+{
+"Operation": "Disconnect operation",
+"Frequency": "1",
+"Operation 2": "Disconnect randomized frequency.",
+"Operator": "dso",
+"Target of Operation": "Power Generation Module",
+"Result": "Success"
+},
+{
+"Operation": "Vector Offset Detection",
+"Operator": "dso",
+"Target of Operation": "Isolation Phenomenon",
+"Result": "Success"
+},
+{
+"Function": "An active method for testing via resonant circuits",
+"Type": "Common Functions",
+"Result": "Success"
+},
+{
+"Voltage": "Declaration value for abnormal power supply",
+"Power Response": "Connection to Distribution Network",
+"Status": "Automatically disconnected",
+"Result": "Success"
+},
+{
+"dso": "requirements",
+"Interface Switch": "Inoperable",
+"Delay": "Appropriate delay",
+"Interface protection relay": "acts as another switch",
+"Result": "Success"
+},
+{
+"Status": "Power Generation Process",
+"Voltage": "<= 110%",
+"Target of Operation": "Power Plant",
+"Status 2": "Continuous operation",
+"Result": "Success"
+},
+{
+"Frequency threshold": "51.0",
+"Frequency threshold step size": "0.1",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase One",
+"Action time step": "0.1",
+"Action Time": "100",
+"Result": "Failure"
+},
+{
+"Voltage": ">Figure 7 Curve Values",
+"Frequency": "Synchronization",
+"Target of Operation": "Power Generation Module",
+"Status": "Stay Connected",
+"Status 2": "Restored to continuous operating voltage range",
+"duration": "<=3",
+"Power Response": ">=90% of pre-fault power",
+"Result": "Success"
+},
+{
+"Operation": "Non-run",
+"Frequency": "52.0",
+"duration": "unlimited",
+"Result": "Failure"
+},
+{
+"Operation": "DSO Requirements",
+"Target Object": "Threshold and Action Time are adjustable on-site",
+"Protection Mechanism": "Methods to prevent unauthorized interference",
+"Protection Mechanism 2": "Password or Seal",
+"Result": "Success"
+},
+{
+"Frequency": ">=f1",
+"duration": ">=tstop",
+"Status": "Disabled",
+"Result": "Success"
+},
+{
+"Operation": "Grid-connected operation",
+"Status": "Generating",
+"Target of Operation": "Power Plant",
+"Condition": "Irrelevant to system topology",
+"Condition 2": "Unrelated to interface protection settings",
+"Protection Mechanism": "Capable of operating within the scope specified in 4.4",
+"Result": "Success"
+},
+{
+"Operator": "Power Plant",
+"Operation Object": "Linear generator generating unit directly and synchronously connected to the power grid",
+"Power Response": "Active factor operating above 0.95",
+"Result": "Success"
+},
+{
+"Operation": "Non-run",
+"Frequency": "51.5",
+"duration": ">=30 minutes",
+"Result": "Failure"
+},
+{
+"Operation": "Non-run",
+"Frequency": "51.0",
+"duration": ">=30 minutes",
+"Result": "Failure"
+},
+{
+"Operation": "Occurred",
+"Voltage": "Voltage drop",
+"Object of Operation": "Power Generation Unit",
+"Protection mechanism": "No voltage support required.",
+"Result": "Success"
+},
+{
+"Operation": "Evaluate all phase-to-phase voltages",
+"Target of Operation": "Power Plant",
+"Result": "Success"
+},
+{
+"Operation": "Immediately and safely disconnect",
+"Status": "Invalid",
+"Operated Object": "Switchgear Auxiliary Power Supply",
+"Result": "Success"
+},
+{
+"Target of Operation": "Power Plant",
+"Protection Mechanism": "Interference Resistance Requirements",
+"Condition": "Unrelated to interface protection device settings",
+"Result": "Success"
+},
+{
+"Target of Operation": "Internal faults in power plants",
+"Protection Mechanism": "Must not affect the normal operation of the power distribution network",
+"Result": "Success"
+},
+{
+"Operation": "Run",
+"Frequency": "48.5",
+"duration": ">=30 minutes",
+"Result": "Failure"
+},
+{
+"Operation": "Non-interference response",
+"Protection Mechanism": "Unrelated to interface protection settings",
+"Result": "Failure"
+},
+{
+"Operation": "Activate",
+"Frequency": "53.0",
+"Operation 2": "Use the actual frequency.",
+"Operation 3": "Calculate δp",
+"Target of Operation": "Power Plant",
+"Fault Type": "Frequency Too High",
+"Status": "Frequency Response Activated",
+"Operation Object 2": "Maximum Power Limit",
+"Operation Object 3": "Accuracy Assessment",
+"Prediction accuracy": "±10% of rated power",
+"duration": "1-minute average",
+"Power Response": "Active Power Response",
+"Result": "Failure"
+},
+{
+"Power Response": "Accuracy within ±10% of rated power",
+"Result": "Success"
+},
+{
+"Operation": "Remote change of q setting value",
+"Status": "The new setting has reached a stable state.",
+"duration": "<=60s",
+"Result": "Success"
+},
+{
+"Operation": "Evaluation",
+"Power response": "0.575",
+"Operating Object": "Overvoltage Protection",
+"duration": "10 minutes",
+"Protection Mechanism": "Activate",
+"duration2": "<=3",
+"Result": "Failure"
+},
+{
+"Operator": "dso",
+"Operation Object": "Power Generation Unit",
+"Status": "Configurable feature enabled or disabled",
+"Result": "Success"
+},
+{
+"Operation": "Implement randomization",
+"Operation Object": "[Threshold changes over time at the unit level; different values are selected for each unit at the substation level; specific thresholds are assigned to each substation or unit by the DSO at the distribution network level]",
+"Result": "Success"
+},
+{
+"Frequency": ">f1",
+"Power Response": "Active power response when the frequency drops due to shutdown",
+"Result": "Success"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"Frequency": "F1 settings provided by the DSO and the responsible party",
+"Result": "Success"
+},
+{
+"Operation": "Non-start power generation",
+"Operation 2": "Unspecified",
+"Operation 3": "Abnormal Operation Startup",
+"Operation 4": "Active Connection",
+"Operator": "Oscilloscope",
+"Target": "Settings",
+"Voltage": "Default value for column 3 of Table 4",
+"Frequency": "Column 3 of Table 4 (default)",
+"duration": "Default value for column 3 of Table 4",
+"Result": "Failure"
+},
+{
+"Operation": "Does not support on-site configuration control mode",
+"Operation 2": "Supports on-site activation control mode.",
+"Operation 3": "Supports on-site deactivation control mode.",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Operation": "Run",
+"Frequency": "47.5",
+"Status": "Not required to run",
+"Result": "Failure"
+},
+{
+"Operation": "Provides automatic disconnection function.",
+"Operation 2": "Non-compliant single-fault tolerance.",
+"Operation 3": "Complies with Clause 4.13",
+"Operator": "Non-grid operator",
+"Object of Operation": "Isolation Device",
+"Result": "Failure"
+},
+{
+"Operation": "Anti-interference",
+"Protection Mechanism": "Unrelated to interface protection settings",
+"Result": "Success"
+},
+{
+"Operation": "Non-configuration settings",
+"Operation 2": "Not using provided settings",
+"Frequency": "f1",
+"Operator": "dso",
+"Operator 2": "Responsible Party",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Operator": "Generation Unit",
+"Power Response": "Complies with EMC requirements of Directive 2014/30/EU or 2014/53/EU.",
+"Result": "Success"
+},
+{
+"Status": "Unintentional Isolated Island",
+"Target of Operation": "Power Distribution Network",
+"Operation Object 2": "Power Generation Unit",
+"Protection Mechanism": "Detection Island",
+"Protection Mechanism 2": "Disconnect the power generation unit",
+"Result": "Success"
+},
+{
+"Status": "Active",
+"Frequency": ">f1",
+"Status 2": "Disabled",
+"Result": "Success"
+},
+{
+"Operation": "Non-resonant circuit test",
+"Target Object": "Photovoltaic Inverter",
+"Status": "Meets standards",
+"Operation Object 2": "en",
+"Result": "Failure"
+},
+{
+"Operation Object": "Power Generation Unit",
+"Status": "Only one active mode can be used at a time.",
+"Power Response": "Operates within the limits specified in 4.7.2.2",
+"Result": "Success"
+},
+{
+"Frequency": "Abnormal Power Supply Declaration Value",
+"Power Response": "Connection to Distribution Network",
+"Status": "Automatically disconnected",
+"Result": "Success"
+},
+{
+"Operation": "Configuration Settings",
+"Operation 2": "Do not use default settings",
+"Status": "Grid-connected operation",
+"Operator": "Power Generator",
+"Target of Operation": "Power Generation Equipment",
+"Result": "Failure"
+},
+{
+"duration": "3s",
+"Protection Mechanism": "Startup time ≤ 3 seconds, not adjustable",
+"Result": "Success"
+},
+{
+"Frequency": "50.5",
+"duration": ">=10",
+"Status": "Continuing to run at least continuously",
+"Result": "Failure"
+},
+{
+"Operation": "Non-selection",
+"Power Response": "1.1",
+"Target of Operation": "Interface Protection Settings",
+"Operator": "dso",
+"Result": "Failure"
+},
+{
+"Operation": "Voltage support not required.",
+"Operator": "Responsible Party",
+"Target of Operation": "Power Plant",
+"Protection Mechanism": "Possesses the ability to manage reactive power",
+"Protection Mechanism 2": "Possesses the ability to manage active power generation",
+"Protection Mechanism 3": "As required by Clause 4.7",
+"Result": "Failure"
+},
+{
+"Frequency": "50",
+"duration": "infinite",
+"Status": "Continuously running",
+"Result": "Failure"
+},
+{
+"Target of Operation": "Power Plant",
+"Condition": "Unrelated to interface protection device settings",
+"Protection mechanism": "Provides resilience",
+"Result": "Success"
+},
+{
+"Operation": "Non-configuration settings",
+"Operation 2": "Do not use default settings",
+"Frequency": "50.2",
+"Operator": "Non-responsible party",
+"Target of Operation": "Power Plant",
+"Power Response": "Sagging",
+"Result": "Failure"
+},
+{
+"Operation": "Not disabled",
+"Operator": "Not a DSO",
+"Operator 2": "Non-responsible party",
+"Target of Operation": "Zero Current Mode Function",
+"Result": "Failure"
+},
+{
+"Operation": "Continuous operation",
+"Frequency": "49",
+"Status": "Continuously running",
+"Result": "Success"
+},
+{
+"Operation": "Hydropower Generation",
+"Power Response": "50",
+"Target of Operation": "Small Power Generation Unit",
+"Status": "Exemption Required",
+"Result": "Failure"
+},
+{
+"Operation": "Run",
+"Voltage": "<0.85un",
+"Protection Mechanism": "Undervoltage and Overvoltage Ride Immune Limit Treatment",
+"Result": "Success"
+},
+{
+"Operation": "Non-run",
+"Frequency": "47.0",
+"Status": "Not required to run",
+"Result": "Failure"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"Protection Mechanism": "Provide digital inputs compliant with 4.9.4",
+"Result": "Success"
+},
+{
+"Operation": "Non-evaluation voltage",
+"Voltage": "Average phase-to-phase voltage per phase",
+"Result": "Failure"
+},
+{
+"Operation": "Abnormal operation",
+"Frequency": "47.5",
+"duration": ">=30",
+"duration2": "<=30",
+"duration3": "<=90",
+"Result": "Success"
+},
+{
+"Operator": "Power Plant",
+"Target of Operation": "Unit",
+"Power Response": "Enable or Disable",
+"Result": "Success"
+},
+{
+"Operation": "Evaluation",
+"Operating Object": "Phase and Neutral Point Voltages",
+"Status": "Voltage assessment completed",
+"Result": "Success"
+},
+{
+"Voltage": "<= 1.2un",
+"Frequency": "<Threshold Second Stage",
+"duration": ">=Second stage of action time",
+"Status": "Disconnected",
+"Result": "Success"
+},
+{
+"Operation": "Define different UVRT characteristic curves",
+"Operator": "Responsible Party",
+"Voltage-Time Curve": "<=Figure 6 Most Strict Curve",
+"Result": "Success"
+},
+{
+"Operation": "Non-abnormal operation",
+"Frequency": "51.5",
+"duration": ">=30",
+"duration2": "<=30",
+"duration3": "<=90",
+"Result": "Failure"
+},
+{
+"Operation": "Disable power-related control mode cosp",
+"Protection Mechanism": "Configure the characteristic curves according to Figure 16",
+"Protection Mechanism 2": "Has a minimum value",
+"Protection Mechanism 3": "Has a maximum value",
+"Protection Mechanism 4": "Has three connection lines",
+"Result": "Failure"
+},
+{
+"Status": "Normal power grid operation",
+"Operation Object": "Power Generation Unit",
+"Protection mechanism": "Capable of ensuring that the voltage does not exceed acceptable limits.",
+"Result": "Success"
+},
+{
+"Operator": "dso",
+"Power Response": "A recovery time other than 3 seconds can be requested",
+"Result": "Success"
+},
+{
+"Status": "Configurable",
+"Operator": "dso",
+"Protection Mechanism": "Prevents unauthorized interference",
+"Result": "Success"
+},
+{
+"Operation": "Non-configuration settings",
+"Operation 2": "Do not use default settings",
+"Frequency": "49.2",
+"Operator": "Non-responsible party",
+"Target of Operation": "Power Plant",
+"duration": "intentional delay",
+"Result": "Failure"
+},
+{
+"Frequency": "51.5",
+"duration": ">=No need to run",
+"duration2": ">=15 minutes",
+"Result": "Failure"
+},
+{
+"Operation": "Lock Out",
+"Operation Object": "qu mode",
+"Status": "qu mode off",
+"Result": "Success"
+},
+{
+"Operation": "Non-configuration settings",
+"Operation 2": "Do not use default settings",
+"Frequency": "50.2",
+"Operator": "Non-responsible party",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Frequency": "53.0",
+"duration": ">=No need to run",
+"duration2": ">=15 minutes",
+"Result": "Failure"
+},
+{
+"Operation": "Run",
+"Voltage": "<un",
+"Power response": "As small as possible",
+"Result": "Success"
+},
+{
+"Operation": "Non-run",
+"Frequency": "46.0",
+"Status": "Not required to run",
+"Result": "Failure"
+},
+{
+"Operation": "Non-selection",
+"Power Response": "0.1",
+"Target of Operation": "Interface Protection Settings",
+"Operator": "dso",
+"Result": "Failure"
+},
+{
+"moduletype": "a type",
+"connectedto": "medium voltage power distribution network",
+"bandwidththreshold": "Selected",
+"Status": "Under consideration",
+"Result": "Success"
+},
+{
+"Operation": "Non-COS",
+"Operator": "Power Plant",
+"Operation Object": "Unit",
+"Power Response": "Control output cos",
+"Result": "Failure"
+},
+{
+"Operation": "Not adjustable",
+"Frequency": "52.0",
+"Voltage": "121",
+"Protection Mechanism": "Overfrequency Threshold Phase 2",
+"duration": ">=0.1",
+"duration2": "<=5",
+"Result": "Failure"
+},
+{
+"Operation": "Non-run",
+"Frequency": "48.5",
+"duration": ">=30 minutes",
+"Result": "Failure"
+},
+{
+"Operation": "q setpoint mode",
+"Operator": "Power Plant",
+"Operation Object": "Unit",
+"Power Response": "Controlling reactive power output",
+"Result": "Success"
+},
+{
+"Operation": "Non-configuration settings",
+"Operation 2": "Use default settings",
+"Frequency": "50.2",
+"Operator": "Non-responsible party",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Operation": "Non-holding constant charging power",
+"Status": "Charging Mode",
+"Operator": "Relevant Responsible Party",
+"Target of Operation": "Energy Storage Unit",
+"Protection Mechanism": "Zero Power Output Mode",
+"Result": "Failure"
+},
+{
+"Operation": "Non-run",
+"Operation Object": "Power Generation Unit",
+"Status": "Same immune level",
+"Result": "Failure"
+},
+{
+"Target of Operation": "Power Plant",
+"duration": "Shortest possible intrinsic dead time",
+"duration2": "Programmable intentional delay",
+"duration3": ">=Inherent dead time",
+"duration4": "<=2 seconds",
+"Result": "Success"
+},
+{
+"Target of Operation": "Interface Protection System",
+"Status": "Features described in the product documentation",
+"Protection Mechanism": "Complies with the requirements of this European Standard",
+"Protection Mechanism 2": "Complies with DSO requirements",
+"Protection Mechanism 3": "Complies with the requirements of the responsible party",
+"Result": "Success"
+},
+{
+"Frequency": "53.0",
+"Status": "Automatic Reconnection",
+"Fault type": "Open circuit",
+"Power Response": "Default Value",
+"Result": "Failure"
+},
+{
+"Operator": "Power Plant",
+"Target of Operation": "Power Generation Module",
+"moduletype": "b type",
+"Status": "Complies with requirements 4.7.4.2 and 4.7.4.3",
+"Result": "Success"
+},
+{
+"Protection mechanism": "Locked value",
+"Protection Mechanism 2": "Lockout Value",
+"Status": "qu mode enabled",
+"Result": "Success"
+},
+{
+"Constraint": "Unable to charge from the AC side",
+"Energy Storage Unit": "DC-coupled Energy Storage",
+"Power Response": "Maintain zero power output",
+"Constraint 2": "Do not switch to charging mode.",
+"Result": "Success"
+},
+{
+"Operation": "Power Generation",
+"Operation 2": "Setting Function Parameters",
+"Operation 3": "Use standardized communication.",
+"Operator": "tso",
+"Target of Operation": "Power Generation Facilities",
+"Power Response": ">Threshold",
+"Status": "Possesses the ability",
+"Operation Object 2": "Operation and Control System",
+"Result": "Success"
+},
+{
+"Overvoltage threshold": "Level 1",
+"Threshold": ">=1.0",
+"Threshold 2": "<=1.2",
+"Threshold step size": "0.01",
+"Result": "Success"
+},
+{
+"Power Response": "Accuracy within ±10% of rated power",
+"Result": "Success"
+},
+{
+"Status": "Overvoltage Category 2",
+"Operation Object": "Switch - Circuit Breaker",
+"State 2": "Overvoltage Category 2 for all live conductors",
+"Operation Object 2": "Multiphase Power Generation Unit",
+"Protection mechanism": "At least one",
+"Result": "Success"
+},
+{
+"Frequency": "<Threshold Second Stage",
+"External signal": "Disable Phase 2",
+"Protection Mechanism": "Phase Two Disabled",
+"Result": "Success"
+},
+{
+"Operation": "Manufacturer's specifications state the required environmental conditions.",
+"Operation 2": "Manufacturer's instructions may impose limitations",
+"Operation 3": "Can be provided in chart format",
+"Conditions": "Environmental conditions affect power reduction",
+"Operation Object": "Power Generation Unit",
+"Result": "Success"
+},
+{
+"Protection Mechanism": "Reset",
+"duration": "<=50ms",
+"Result": "Success"
+},
+{
+"Frequency": "47.0",
+"Target": "Second Stage",
+"Protection Mechanism": "Frequency below protection level",
+"duration": ">0.1",
+"duration2": "<5.0",
+"Result": "Failure"
+},
+{
+"interface protection mechanism power": "failed",
+"Status": "Immediately trigger interface switch",
+"Result": "Success"
+},
+{
+"Operation": "Reconnect",
+"Target of Operation": "Power Plant",
+"duration": "1 minute",
+"Power Response": "<=Specified Value",
+"Result": "Success"
+},
+{
+"Voltage": "Unspecified",
+"Frequency": "Unspecified",
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"duration": "unspecified",
+"Status": "Reconnection after interface protection incident uses the default settings in column 3 of Table 3.",
+"Result": "Success"
+},
+{
+"Parameter": "Active power gradient",
+"Scope": "[6,3000]%/minand default setting=disable",
+"Result": "Success"
+},
+{
+"Operation": "Does not support on-site configuration control mode",
+"Operation 2": "Not supported in on-site activation control mode",
+"Operation 3": "Control mode not supported for on-site shutdown",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Operation": "Requirements",
+"Operator": "dso",
+"Fault Type": "Local Phenomenon",
+"Fault Type 2": "Fault along the line",
+"Status": "Provides numeric input conforming to 4.9.4",
+"Frequency": "Using threshold 4.9.2.6",
+"Protection Mechanism": "Switch to Narrow Bandwidth",
+"Protection Mechanism 2": "Enable frequency restriction window",
+"Protection Mechanism 3": "Associated with Additional Protection Functions",
+"Result": "Success"
+},
+{
+"Operation": "Abnormal operation",
+"Frequency": "47.0",
+"duration": ">=0",
+"duration2": "<=0",
+"duration3": "<=20",
+"Result": "Success"
+},
+{
+"Operation": "Unless otherwise requested",
+"Operator": "Responsible Party",
+"duration": "Performed in accordance with the requirements of the DSO and the responsible party.",
+"Power Response": "Performed in accordance with DSO and responsible party requirements.",
+"Result": "Failure"
+},
+{
+"Frequency": "0.5",
+"Operation": "Allow disconnection",
+"Status": "Emerging Technology",
+"Target Object": "Power Generation Module with Linear Stirling Engine",
+"Result": "Success"
+},
+{
+"Operation": "Non-stop",
+"Operation 2": "Off-site adjustment",
+"Operation Object": "Power Generation Unit",
+"Protection Mechanism": "Prevents unauthorized interference",
+"Status": "Adjustable",
+"Result": "Failure"
+},
+{
+"Operation": "Non-application active power response to excessively high frequencies",
+"Frequency": "f1 is set between 50.2 and 50.5 Hz",
+"Result": "Failure"
+},
+{
+"Operation": "No precision required",
+"Condition": "Deviates only from accuracy requirements",
+"Power Response": "Active Power pd",
+"Result": "Failure"
+},
+{
+"Operation": "Disconnect operation",
+"Frequency": "52",
+"Operation 2": "Disconnect non-randomized frequency.",
+"Operator": "Relevant Responsible Party",
+"Target of Operation": "Power Generation Module",
+"Result": "Failure"
+},
+{
+"Voltage": ">Voltage-Time Curve",
+"Operator": "Generator Module",
+"Status": "Stay Connected",
+"Result": "Success"
+},
+{
+"Status": "Grid-connected operation",
+"Target of Operation": "Power Plant",
+"Protection Mechanism": "Provides immunity to dynamic voltage changes.",
+"Power response": "Contributes to power system stability",
+"Result": "Success"
+},
+{
+"Operation": "Switch to Trip",
+"Operator": "dso",
+"Target of Operation": "Isolation Phenomenon",
+"Result": "Success"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Protection System",
+"Protection Mechanism": "Some or all functions may be required.",
+"Result": "Success"
+},
+{
+"Operator": "Power Plant",
+"Target of Operation": "Power Generation Module",
+"moduletype": "a type",
+"Status": "Complies with requirement 4.7.4.1",
+"Status 2": "The actual behavior is explicitly stipulated in the access protocol.",
+"Result": "Success"
+},
+{
+"Operation": "Non-abnormal operation",
+"Frequency": "48.0",
+"duration": ">0",
+"Result": "Failure"
+},
+{
+"Operation": "Run",
+"Frequency": "46.5",
+"duration": ">=30 minutes",
+"Result": "Failure"
+},
+{
+"Operation": "Not reaching the minimum adjustment level",
+"Operation 2": "Disconnect individual units",
+"Status": "Frequency Response Activated",
+"Frequency": ">f1",
+"Target of Operation": "Power Plant",
+"Fault Type": "Frequency Too High",
+"State 2": "Maintain constant power level",
+"Operator": "dso",
+"Operator 2": "Responsible Party",
+"Result": "Failure"
+},
+{
+"Target of Operation": "Power Plant",
+"Status": "Single Control Mode Activated",
+"Result": "Success"
+},
+{
+"Operation Object": "Power Generation Unit",
+"Status": "Single Control Mode Activated",
+"Result": "Success"
+},
+{
+"Operation": "Not required to prevent unauthorized interference",
+"Operator": "dso",
+"Protection Mechanism": "Provides protective measures such as passwords or seals",
+"Result": "Failure"
+},
+{
+"Voltage": "<Lower limit of static voltage range",
+"Power Generation Unit": "Doubly Fed Induction Motor",
+"Power Response": "Positive sequence current drops to below 10% of rated current.",
+"Result": "Success"
+},
+{
+"Status": "Reconnected",
+"Operator": "Power Plant",
+"Power Response": "Does not exceed the specified climb rate",
+"Result": "Success"
+},
+{
+"Status": "During normal power grid operation",
+"Operator": "Power Plant",
+"Voltage": "Scope stipulated by national regulations",
+"Frequency": "Continuous operating frequency range",
+"Result": "Success"
+},
+{
+"Operation": "Non-start power generation",
+"Power Response": "Disabled",
+"Status": "Allowed",
+"Result": "Failure"
+},
+{
+"Operation": "Switch to charging mode",
+"Status": "Zero power output",
+"Operator": "Relevant Responsible Party",
+"Target of Operation": "Energy Storage Unit",
+"Protection Mechanism": "Zero Power Output Mode",
+"State 2": "Maintain zero power output state",
+"Result": "Failure"
+},
+{
+"Operation": "Not operable remotely.",
+"Target Object": "Generator Set",
+"Power Response": "Accuracy 5% of Rated Power",
+"Status": "Can be disconnected from the power grid",
+"Result": "Failure"
+},
+{
+"Operation": "Continuous operation",
+"Frequency": "52",
+"Status": "Continuously running",
+"Result": "Failure"
+},
+{
+"Target of Operation": "Small Power Generation Unit",
+"Power Response": ">=50kW",
+"Protection Mechanism": "Applicable to requirements 4.5.3",
+"Result": "Success"
+},
+{
+"Operation": "Inactive",
+"Frequency": "49.2",
+"Operation 2": "Not using actual frequency",
+"Operation 3": "Calculate δp",
+"Target of Operation": "Power Plant",
+"Fault Type": "Frequency Too High",
+"Status": "Frequency Response Activated",
+"Operation Object 2": "Maximum Power Limit",
+"Operation Object 3": "Accuracy Assessment",
+"Prediction accuracy": "±10% of rated power",
+"duration": "1-minute average",
+"Power Response": "Active Power Response",
+"Result": "Failure"
+},
+{
+"Operation": "Control",
+"Target": "Frequency Measurement",
+"duration": "shorter measurement period",
+"Result": "Success"
+},
+{
+"Operation": "Start power generation",
+"Operation 2": "Specify",
+"Operation 3": "Abnormal Operation Startup",
+"Operation 4": "Active Connection",
+"Operator": "Oscilloscope",
+"Target": "Settings",
+"Voltage": "Default value for column 3 of Table 4",
+"Frequency": "Column 3 of Table 4 (default)",
+"duration": "Default value for column 3 of Table 4",
+"Result": "Failure"
+},
+{
+"Operator": "Power Plant",
+"Voltage": "Not outside acceptable range",
+"Result": "Success"
+},
+{
+"Operator": "Power Plant",
+"Fault Type": "High Probability",
+"Fault Type 2": "Fault Considering Common Causes",
+"Result": "Success"
+},
+{
+"Static voltage range": "Upper limit",
+"Upper limit": ">= 100% of the rated voltage un",
+"Maximum 2": "<=130% of rated voltage un",
+"Result": "Success"
+},
+{
+"Operation": "Inactive",
+"Frequency": "50.2",
+"Operation 2": "Use the actual frequency.",
+"Operation 3": "Non-calculation of δp",
+"Target of Operation": "Power Plant",
+"Fault Type": "Frequency Too High",
+"Status": "Frequency Response Activated",
+"Operation Object 2": "Maximum Power Limit",
+"Operation Object 3": "Accuracy Assessment",
+"Prediction accuracy": "±10% of rated power",
+"duration": "1-minute average",
+"Power Response": "Active Power Response",
+"Result": "Failure"
+},
+{
+"Operation": "Based on",
+"Operation 2": "Provide automatic disconnection function.",
+"Operation 3": "Compliant with single-fault tolerance capability",
+"Operation 4": "Complies with Clause 4.13",
+"Operator": "Non-grid operator",
+"Result": "Success"
+},
+{
+"Operation": "Disable",
+"Operator": "Not a DSO",
+"Operator 2": "Non-responsible party",
+"Target of Operation": "Zero Current Mode Function",
+"Result": "Success"
+},
+{
+"Operation": "After a non-phase transition occurs",
+"Target of Operation": "Power Generation Module",
+"Operation Object 2": "Asynchronous Power Generation Technology",
+"Fault type": "Symmetry",
+"Power Response": "90% of the smaller value",
+"Result": "Failure"
+},
+{
+"Operation": "Make other requests",
+"Operator": "Responsible Party",
+"duration": "Performed in accordance with the requirements of the DSO and the responsible party.",
+"Power Response": "Performed in accordance with DSO and responsible party requirements.",
+"Result": "Success"
+},
+{
+"Operation": "rocof trip",
+"Operator": "dso",
+"Target of Operation": "Isolation Phenomenon",
+"Result": "Success"
+},
+{
+"Operation": "Non-reducing positive sequence current",
+"Power Response": "1.1",
+"Status": "Grid-connected operation",
+"Voltage": ">1.3un",
+"Operation Object": "Power Generation Unit Based on Doubly Fed Induction Motor",
+"Result": "Failure"
+},
+{
+"Operation": "Run",
+"Frequency": "49.0",
+"duration": ">=30 minutes",
+"Result": "Failure"
+},
+{
+"Power generation unit": "Exists",
+"Requirements": "Compliant with electromagnetic compatibility.",
+"Instruction": "2014/30/eu",
+"Result": "Success"
+},
+{
+"Frequency threshold": "47.0",
+"Frequency threshold step size": "0.05",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase One",
+"Action time step": "0.1",
+"Action Time": "Post-100s",
+"Result": "Failure"
+},
+{
+"Operation": "Non-evaluation",
+"Operation 2": "Non-selection switch",
+"Fault Type": "Power Plant's Contribution to Short-Circuit Current",
+"Result": "Failure"
+},
+{
+"Function": "rocof trip",
+"Standard": "No European standard.",
+"Result": "Success"
+},
+{
+"Operation Object": "qu mode",
+"Prediction accuracy": "Static accuracy complies with the requirements of clause 4.7.2.2.",
+"Result": "Success"
+},
+{
+"Operation": "Increase non-active power",
+"Status": "Frequency response disabled",
+"Target of Operation": "Power Plant",
+"Power Response": "<=4.10.2 Gradient",
+"Result": "Failure"
+},
+{
+"Frequency": "52.0",
+"duration": ">=No need to run",
+"duration2": ">=15 minutes",
+"Result": "Success"
+},
+{
+"Operation": "Not adjustable",
+"Frequency": "51.0",
+"Voltage": "19",
+"Protection Mechanism": "Overfrequency Threshold Phase 1",
+"duration": ">=0.1",
+"duration2": "<=100",
+"Result": "Failure"
+},
+{
+"Operation": "Evaluate Voltage",
+"Operation Object": "qu Control Mode",
+"Voltage": "Voltage measured independently for each phase",
+"Result": "Success"
+},
+{
+"Number of protection thresholds": "1",
+"Protection Function": "Undervoltage Protection",
+"Independence": "Complete independence",
+"Result": "Failure"
+},
+{
+"Parameters": "Action Time",
+"Over-frequency stage": "Phase 1",
+"Adjust step size": "0.1",
+"Action Time": "100",
+"Result": "Failure"
+},
+{
+"Operation": "Combining the interface switch and the generator unit switch",
+"Operated Object": "Switching Device",
+"Operation Object 2": "Meets all requirements",
+"Result": "Success"
+},
+{
+"Status": "Running",
+"Frequency": "Discontinuous operating frequency range",
+"Prediction accuracy": "Technically feasible",
+"Result": "Success"
+},
+{
+"Status": "Automatic Reconnection",
+"Fault type": "Open circuit",
+"duration": ">=10",
+"duration2": "<=600",
+"Power Response": "Default Value",
+"Result": "Success"
+},
+{
+"Operation": "Charging",
+"Frequency": "<Standard Frequency",
+"Operation Object": "ees Unit",
+"Power Response": "Startup",
+"Result": "Success"
+},
+{
+"Operation": "On-site adjustments",
+"Operation 2": "No protection required",
+"Operator": "dso",
+"Protection Mechanism": "Prevents unauthorized interference",
+"Result": "Failure"
+},
+{
+"Operation": "Unauthorized reduction of charging power",
+"Status": "Maximum charging capacity reached",
+"Result": "Failure"
+},
+{
+"Operation": "Non-configuration settings",
+"Operation 2": "Use default settings",
+"Frequency": "49.2",
+"Operator": "Non-responsible party",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Frequency": "46.0",
+"duration": ">=No need to run",
+"duration2": ">=20 seconds",
+"Result": "Failure"
+},
+{
+"Operation": "Power Generation",
+"Status": "System Topology",
+"Status 2": "Operating within the following specified operating range",
+"Result": "Success"
+},
+{
+"Operation": "Requirements",
+"Operator": "Responsible Party",
+"Power Response": "More stringent power reduction characteristics",
+"Result": "Success"
+},
+{
+"Operation": "Disable power-related control mode cosp",
+"Operation 2": "Control power factor cosφ without controlling active power output",
+"Status": "Grid-connected operation",
+"Target of Operation": "Power Generation Equipment",
+"Result": "Failure"
+},
+{
+"Operation": "Non-Rocof trip",
+"Operator": "dso",
+"Target of Operation": "Isolation Phenomenon",
+"Result": "Failure"
+},
+{
+"Operation": "Evaluation",
+"Operation 2": "Select Switch",
+"Fault Type": "Short Circuit Current",
+"Result": "Success"
+},
+{
+"Operation": "Change of non-cosφ setpoint",
+"State": "The output has reached a new stable state.",
+"duration": "<=60s",
+"Result": "Failure"
+},
+{
+"Frequency": "46",
+"duration": ">=0.5",
+"Status": "Continuing to run at least continuously",
+"Result": "Failure"
+},
+{
+"Frequency threshold": "46.95",
+"Frequency threshold step size": "0.05",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase Two",
+"Motion time step": "0.05",
+"Action Time": "5",
+"Result": "Failure"
+},
+{
+"Operation": "Grid-connected operation",
+"Fault Type": "DSO Network Fault",
+"Protection Mechanism": "Switch Coordination Operation",
+"Result": "Success"
+},
+{
+"Operation": "Non-reconnect",
+"Target of Operation": "Power Generation Module",
+"Power Response": "Unspecified value",
+"duration": "10 minutes",
+"Result": "Failure"
+},
+{
+"Target of Operation": "Distributed Generation Penetration Rate",
+"Status": "May cause significant active power loss",
+"Result": "Success"
+},
+{
+"Operation": "Evaluation",
+"Protection Mechanism": "Overvoltage Protection",
+"Voltage": "RMS value",
+"Result": "Success"
+},
+{
+"Operation": "Discontinuous operation",
+"Frequency": "48",
+"Status": "Continuously running",
+"Result": "Failure"
+},
+{
+"Operation": "Use integrated interface protection device",
+"Status": "Emerging Technology",
+"Target Object": "Power Generation Module with Linear Stirling Engine",
+"Protection Mechanism": "The scope of interface protection configuration in Section 4.9 is reduced, which is acceptable.",
+"Result": "Success"
+},
+{
+"Power Response": "Provides reactive power with an accuracy of ±2%smax.",
+"Constraint": "The higher of the minimum regulation levels for power plants",
+"Result": "Success"
+},
+{
+"Operation": "Random disconnection procedure is not allowed.",
+"Target of Operation": "Power Generation Module",
+"reason": "[Technical reasons prevent sufficient power reduction within the specified time; distribution network issues prevent precise adjustment to avoid accidental islanding]",
+"Result": "Failure"
+},
+{
+"Power Response": "Accuracy within ±10% of rated power",
+"Result": "Success"
+},
+{
+"Operator": "dso",
+"Target Object": "Generator Set",
+"Power Response": "Remotely Operable",
+"Result": "Success"
+},
+{
+"Signal transmission protocol": "Used between DSO or TSO control centers and power generation facilities.",
+"Signal Transmission Protocol 2": "An alternative agreement reached between the DSO and the power generator",
+"Result": "Success"
+},
+{
+"Frequency range": "[2kHz, 150kHz]",
+"Connecting to a power plant": "Causes electromagnetic interference to the power grid signaling system",
+"Request": "Take mitigation measures",
+"Requirement 2": "Applicable National Requirements",
+"Result": "Success"
+},
+{
+"Operation": "Non-programmable frequency threshold f1",
+"Frequency": "50.2",
+"Target of Operation": "Power Plant",
+"Result": "Failure"
+},
+{
+"Operation": "cos",
+"Status": "New setting value changed",
+"duration": "<=1min",
+"Result": "Success"
+},
+{
+"Constraint": "Randomization is implemented at the distribution network level.",
+"Frequency": "Select different thresholds based on time or unit/plant/network",
+"Result": "Success"
+},
+{
+"Operation": "Non-evaluation overvoltage ride-through",
+"Voltage": "Highest phase - Neutral voltage",
+"Result": "Failure"
+},
+{
+"Status": "Power Generation Module",
+"Status 2": "Requires compliance with 4.5.3.2",
+"Status 3": "Requires compliance with 4.5.3.3",
+"Status 4": "Meets general requirements",
+"Result": "Success"
+},
+{
+"Status": "Active",
+"duration": "<=2s",
+"Power Response": "Available",
+"Result": "Success"
+},
+{
+"Operator": "dso",
+"Target of Operation": "Power Plant",
+"duration": "Intentional delay settings provided by the DSO and the responsible party",
+"Result": "Success"
+},
+{
+"Operation": "Non-connection",
+"Operation 2": "Start generating electricity.",
+"Voltage": "Within permissible range",
+"Frequency": "Within the allowable range",
+"duration": ">=Observation time",
+"Status": "Connection Allowed",
+"Result": "Failure"
+},
+{
+"Operation": "Instructions",
+"manufacturer": "manufacturer",
+"Status": "Possible limitations",
+"Object to be operated on": "Environmental conditions that meet the requirements",
+"Result": "Success"
+},
+{
+"Frequency threshold": "46.0",
+"Frequency threshold step size": "0.1",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase Two",
+"Motion time step": "0.05",
+"Action Time": "5",
+"Result": "Failure"
+},
+{
+"Frequency": "Abnormal Power Supply Declaration Value",
+"Power Response": "Connection to Distribution Network",
+"Status": "Automatically disconnected",
+"Result": "Success"
+},
+{
+"Operation": "Composition of Electronic Switching Components",
+"Operation 2": "Control signal off",
+"Target": "Second switch",
+"Protection Mechanism": "Fault detected",
+"Protection Mechanism 2": "Prevents operation before reconnection",
+"Result": "Success"
+},
+{
+"Operation": "Non-specified voltage control contribution form",
+"Operator": "dso",
+"Protection Mechanism": "Must be complied with",
+"Result": "Failure"
+},
+{
+"Operation": "Not specified",
+"Frequency": "1",
+"Operator": "Responsible Party",
+"Target": "rocof immune value",
+"Protective Mechanism": "Immunity",
+"duration": ">=500",
+"Result": "Failure"
+},
+{
+"Voltage": "<= 1.2un",
+"Frequency": "<Threshold First Stage",
+"Protection Mechanism": "Activated in Phase One",
+"Result": "Success"
+},
+{
+"Operation": "Non-start power generation",
+"Voltage": "1.05",
+"Status": "Allowed",
+"Result": "Failure"
+},
+{
+"Operation": "Non-locked",
+"Operation Object": "qu mode",
+"Status": "qu mode enabled",
+"Result": "Failure"
+},
+{
+"duration": "0ms",
+"Protection Mechanism": "Time Delay Setting = 0ms",
+"Result": "Success"
+},
+{
+"Frequency": "51",
+"duration": "infinite",
+"Status": "Continuously running",
+"Result": "Success"
+},
+{
+"Operation": "Fuel Cell",
+"Power Response": "50",
+"Target of Operation": "Small Power Generation Unit",
+"Status": "Exemption from OVR requirements",
+"Result": "Failure"
+},
+{
+"Frequency threshold": "51.0",
+"Frequency threshold step size": "0.1",
+"Protection Type": "Frequency below protection",
+"Protection Phase": "Phase Two",
+"Motion time step": "0.05",
+"Action Time": "5 hours later",
+"Result": "Failure"
+},
+{
+"Operation": "Run",
+"Status": "Disconnection required by non-safety standards",
+"Operator": "Power Plant",
+"Power response": "Contributes to the stability of the entire power system.",
+"Result": "Success"
+},
+{
+"Power Response": "Reduce active power",
+"duration": ">=0.33%pn/s",
+"duration2": "<=0.66%pn/s",
+"Result": "Success"
+},
+{
+"Operation": "Requirements",
+"Voltage": "Voltage drop",
+"Operator": "Relevant Party",
+"Object of Operation": "Power Generation Unit",
+"Fault Type": "Class B",
+"Status": "Applicable to Clause 4.7.4 of EN50549-2 standard",
+"Result": "Success"
+},
+{
+"Voltage": "1.0",
+"duration": "<=3s",
+"Protection Mechanism": "Activate",
+"Result": "Success"
+},
+{
+"Operation": "Start power generation",
+"Frequency": "49.0",
+"Status": "Allowed",
+"Result": "Failure"
+},
+{
+"Protection Mechanism": "Lockout Value",
+"Protection Mechanism 2": "Lockout Value",
+"Status": "qu mode off",
+"Result": "Success"
+},
+{
+"Action": "Disagree",
+"Operator": "Power Generator",
+"Operator 2": "dso",
+"Operator 3": "tso",
+"Operator 4": "Responsible Party",
+"Frequency": "Wideer frequency range",
+"duration": "longer runtime",
+"Result": "Failure"
+},
+{
+"Operation": "Charging not from the AC side",
+"Operation 2": "Yes",
+"Operation 3": "Maintain zero power output state",
+"Operation 4": "Switch to charging mode.",
+"Status": "DC Coupled",
+"Target of Operation": "Energy Storage Unit",
+"Status 2": "Exemption",
+"Result": "Failure"
+},
+{
+"Operation": "Non-q setpoint mode",
+"Status": "New setting value changed",
+"duration": "<=1min",
+"Result": "Failure"
+},
+{
+"Voltage": "49",
+"Status": "Automatic Reconnection",
+"Fault type": "Open circuit",
+"Power Response": "Default Value",
+"Result": "Failure"
+},
+{
+"Voltage": "<Threshold Stage 1",
+"Power Response": "Inactive",
+"Status": "Active",
+"duration": "Phase 1 action time",
+"Result": "Success"
+},
+{
+"Operation Object": "Power Generation Unit",
+"Fault Type": "[Single-phase fault, Two-phase fault, Three-phase fault]",
+"Protection Mechanism": "Satisfies the minimum FRT curve in Figure 8",
+"Result": "Success"
+},
+{
+"Operation": "Non-holding",
+"Frequency": "<Normal frequency of the connection point",
+"Status": "Stable Operation",
+"Power Response": "Minimize the reduction of maximum active power as much as possible.",
+"Result": "Failure"
+}
+]

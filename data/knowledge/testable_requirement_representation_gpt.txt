@@ -1,0 +1,114 @@
+## Symbols
+
+Logical Symbols (Grammatical Position: Within Condition/Action/ExpectedOutcome)
+- **AND, OR, NOT** — Binary/unary logical connectors, used to combine sub-expressions or negate.
+- Parentheses **( )** — Control precedence.
+
+Comparison Symbols (Grammatical Position: Atomic Predicate)
+- `=` : Equal to
+- `!=` : Not equal to
+- `<, <=, >, >=` — Numeric comparison (only semantically valid when the field value is numeric)
+- **IN** — Membership test (the right side is a string list or numeric list; list elements must still be strings/numeric values)
+- **BETWEEN** — Interval (format: `<Field> BETWEEN <low> AND <high>`)
+
+Grammar Note: Comparison symbols can only be used to form **atomic predicates** — the smallest unit of Condition/Action/ExpectedOutcome.
+
+
+Domain Symbols (Field names; Grammatical Position: Left side of atomic predicate)
+These identifiers are not language reserved words (i.e., not literal keywords), but **field names** corresponding to metamodel leaf attributes:
+- Precondition-related: Actor, TradingInstrument, TradingMarket, Time, Constraint, Event
+- Operation-related: OperationPart, TradingDirection, TradingMethod, Quantity, Price, Status
+- ExpectedResult-related: ResultStatus, Result
+- Other available domains (if metamodel is extended): OrderID, Account, SettlementMode, etc.
+
+Semantic Role: Field names are used to bind specific string or numeric constants (leaf values must be strings or numbers).
+
+## Syntax
+<Rule> ::= "IF" <Expression> "AND" <Expression> "THEN" <Expression>
+
+<!-- Expression is the subformat of Condition/Action/ExpectedOutcome -->
+<Expression> ::= <OrExpr>
+
+<OrExpr> ::= <AndExpr> | <OrExpr> "OR" <AndExpr>
+<AndExpr> ::= <NotExpr> | <AndExpr> "AND" <NotExpr>
+<NotExpr> ::= "NOT" <Primary> | <Primary>
+<Primary> ::= <Atomic> | "(" <Expression> ")"
+
+<!-- atomic word -->
+<Atomic> ::= <Field> <Comparator> <Literal>
+            | <Field> "BETWEEN" <NumericLiteral> "AND" <NumericLiteral>
+            | <Field> "IN" <ListLiteral>
+
+<Field> ::= /* one of domain fields, e.g. */ "Actor" | "TradingInstrument" | "TradingMarket"
+            | "Time" | "Constraint" | "Event"
+            | "OperationPart" | "TradingDirection" | "TradingMethod" | "Quantity" | "Price" | "Status"
+            | "ResultStatus" | "Result"
+
+<Comparator> ::= "=" | "!=" | "<" | "<=" | ">" | ">="
+
+<ListLiteral> ::= "(" <Literal> { "," <Literal> } ")"
+
+<Literal> ::= <StringLiteral> | <NumericLiteral>
+<StringLiteral> ::= '"' <any-non-quote-chars> '"'
+<NumericLiteral> ::= <integer> | <float>
+
+## Testability Constraints
+-- 1)
+context Rule
+inv StructuralCompleteness:
+    not self.Precondition.oclIsUndefined() and
+    not self.Operation.oclIsUndefined() and
+    not self.ExpectedResult.oclIsUndefined()
+
+-- 2)
+context Precondition
+inv PreconditionLeafTypesAreLiteral:
+    (self.Actor.oclIsUndefined() or self.Actor.oclIsTypeOf(String)) and
+    (self.TradingInstrument.oclIsUndefined() or self.TradingInstrument.oclIsTypeOf(String)) and
+    (self.TradingMarket.oclIsUndefined() or self.TradingMarket.oclIsTypeOf(String)) and
+    (self.Time.oclIsUndefined() or self.Time.oclIsTypeOf(String)) and
+    (self.Constraint.oclIsUndefined() or self.Constraint.oclIsTypeOf(String)) and
+    (self.Event.oclIsUndefined() or self.Event.oclIsTypeOf(String))
+
+context Operation
+inv OperationLeafTypesAreLiteral:
+    (self.OperationPart.oclIsUndefined() or self.OperationPart.oclIsTypeOf(String)) and
+    (self.TradingDirection.oclIsUndefined() or self.TradingDirection.oclIsTypeOf(String)) and
+    (self.TradingMethod.oclIsUndefined() or self.TradingMethod.oclIsTypeOf(String)) and
+    (self.Quantity.oclIsUndefined() or self.Quantity.oclIsTypeOf(Integer) or self.Quantity.oclIsTypeOf(Real)) and
+    (self.Price.oclIsUndefined() or self.Price.oclIsTypeOf(Integer) or self.Price.oclIsTypeOf(Real)) and
+    (self.Status.oclIsUndefined() or self.Status.oclIsTypeOf(String))
+
+context ExpectedResult
+inv ExpectedResultLeafTypesAreLiteral:
+    (self.ResultStatus.oclIsUndefined() or self.ResultStatus.oclIsTypeOf(String)) and
+    (self.Result.oclIsUndefined() or self.Result.oclIsTypeOf(String) or self.Result.oclIsTypeOf(Integer) or self.Result.oclIsTypeOf(Real))
+
+-- 3)
+context Rule
+inv ExpectedResultObservable:
+    not self.ExpectedResult.ResultStatus.oclIsUndefined() or not self.ExpectedResult.Result.oclIsUndefined()
+
+-- 4)
+context Rule
+inv OperationExecutable:
+    not self.Operation.OperationPart.oclIsUndefined() or
+    not self.Operation.TradingMethod.oclIsUndefined() or
+    not self.Operation.TradingDirection.oclIsUndefined()
+
+-- 5)
+context Rule
+inv DeterministicOutcome:
+    Rule.allInstances()->forAll(r2 |
+        if r2 <> self and r2.Precondition = self.Precondition and r2.Operation = self.Operation
+        then r2.ExpectedResult.ResultStatus = self.ExpectedResult.ResultStatus
+        else true
+        endif)
+
+-- 6)
+context Rule
+inv PreconditionGroundable:
+    Precondition.allInstances()->forAll(p |
+        (p.Actor.oclIsUndefined() or p.Actor.oclIsTypeOf(String)) and
+        (p.Time.oclIsUndefined() or p.Time.oclIsTypeOf(String))
+    )

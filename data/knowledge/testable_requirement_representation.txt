@@ -1,0 +1,86 @@
+## Symbols
+
+- Logical Symbol
+  - and, or, not
+  - -> (if...then...)
+- Comparison Symbol
+  - =, !=, >, >=, <, <=, in, notin
+- Domain Symbol
+  - Precondition: Actor, TradingInstrument, TradingMarket, Time, Constraint, Event
+  - Operation: Action, TradingDirection, TradingMethod, Quantity, Price, OperationPart, Status
+  - ExpectedResult: ResultStatus, Result
+
+
+## Syntax
+
+Rule ::= "IF" <Precondition> "AND" <Operation> "THEN" <ExpectedOutcome>
+
+Precondition ::= <AtomicPrecondition> | <CompoundPrecondition>
+AtomicPrecondition ::= <PreconditionElement> <Comparator> <Value>
+CompoundPrecondition ::= "(" <Precondition> ")" 
+                    | <Precondition> "AND" <Precondition>
+                    | <Precondition> "OR" <Precondition>
+                    | "NOT" <Precondition>
+
+Operation ::= <AtomicOperation> | <CompoundOperation>
+AtomicOperation ::= <OperationElement> <Comparator> <Value>
+CompoundOperation ::= "(" <Operation> ")" 
+                 | <Operation> "AND" <Operation>
+                 | <Operation> "OR" <Operation>
+                 | "NOT" <Operation>
+
+ExpectedOutcome ::= <AtomicOutcome> | <CompoundOutcome>
+AtomicOutcome ::= <ResultElement> <Comparator> <Value>
+CompoundOutcome ::= "(" <ExpectedOutcome> ")" 
+                  | <ExpectedOutcome> "AND" <ExpectedOutcome>
+
+PreconditionElement ::= "Actor" | "TradingInstrument" | "TradingMarket" 
+                | "Time" | "Event" | "Constraint"
+                
+OperationElement ::= "Action" | "TradingDirection" | "TradingMethod" 
+                   | "Quantity" | "Price" | "OperationPart" | "Status" | "Constraint"
+                   
+ResultElement ::= "ResultStatus" | "Result" | "Constraint"
+
+Comparator ::= "=" | "!=" | ">" | "<" | ">=" | "<=" | "in" | "not in"
+
+Value ::= <StringLiteral> | <NumberLiteral> | <BooleanLiteral> | <TimeLiteral> | <TimeRangeSet>
+StringLiteral ::= "\"" [^"]* "\""
+NumberLiteral ::= [0-9]+ ("." [0-9]+)?
+BooleanLiteral ::= "true" | "false"
+
+TimeLiteral ::= "\"" [0-9]{2} ":" [0-9]{2} (":" [0-9]{2})? "\""
+TimeRange ::= <TimeLiteral> "-" <TimeLiteral>
+TimeRangeSet ::= "[" <TimeRange> ("," <TimeRange>)* "]"  // e.g., [10:00-12:00,13:00-14:00]
+
+## Testability Constraints
+
+context Rule
+inv StructuralCompleteness:
+    not self.Precondition.oclIsUndefined() and
+    not self.Operation.oclIsUndefined() and
+    not self.ExpectedResult.oclIsUndefined()
+
+context Rule
+inv RuleElementDeterministic:
+    self.Precondition->forAll(e | e.concrete() and e.deterministic())
+    self.Operation->forAll(e | e.concrete() and e.deterministic())
+    self.ExpectedResult->forAll(e | e.concrete() and e.deterministic())
+
+context Rule
+inv ActionExecutable:
+    self.Operation.Action.notEmpty() and
+    self.Operation.Action.executable()
+
+context Rule
+inv ExpectedResultObservable:
+    self.ExpectedResult.Result.notEmpty() and
+    self.ExpectedResult.Result.observable()
+
+context Rule
+inv DeterministicOutcome:
+    Rule.allInstances()->forAll(r2 |
+        if r2 <> self and r2.Precondition = self.Precondition and r2.Operation = self.Operation
+        then r2.ExpectedResult.ResultStatus = self.ExpectedResult.ResultStatus
+        else true
+        endif)
